@@ -72,6 +72,7 @@ if situation == 1:
         f"[output]计算结果:  当量比{str(chr(934))}: {equivalence_ratio:.4f}; "
         f"以百分比表示: {equivalence_ratio_percent:.2f}%; "
         f"过量空气系数{str(chr(955))}:{excess_air:.2f}")
+# todo write to a .txt file
 
 # 对于CH4-H2混合燃料而言，求特定当量比和掺氢比下的空气流速，包括定当量比，变掺氢比与定掺氢比，变当量比两种选择(d、c)（针对的边界条件为同轴燃烧器）
 elif situation == 2:
