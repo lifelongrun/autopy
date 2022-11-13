@@ -1,7 +1,4 @@
 
-
-# new line
-
 # 预设的基本常量
 
 # unit m 几何尺寸 （(默认的几何结构参数)
@@ -9,8 +6,6 @@ inlet_diameter_of_fuel = 0.00425    #0.005 * 2   # 王珂的二维模型0.00425 
 bluff_thickness = 0.001             #0.004       # 王珂的二维模0.001          #
 inlet_diameter_of_air_out = 0.082   #0.225 * 2   # 王珂的二维模0.082          #
 inlet_diameter_of_air_in = 2 * bluff_thickness + inlet_diameter_of_fuel
-
-
 
 # unit kg/m3 密度 (通用)
 density_ch4 = 0.65
@@ -29,7 +24,6 @@ print(
 '''
 )
 
-
 print(f'''
 如上图所示,本次计算的几何模型为同轴燃烧器,其中心轴为燃料入口,外环为空气入口,其间隔着一个( (⚪) )圆环形且厚度为thickness的bluff body。
       默认结构参数如下:
@@ -39,7 +33,6 @@ print(f'''
       inlet inner diameter of air = {inlet_diameter_of_air_in}
       
       ''')
-
 
 print("-----燃烧器的几何参数确定-----")
 geometry_parameter_confirm = input("[in]请确认是否需要修改以上参数?[y/n]")
@@ -80,8 +73,6 @@ if situation == 1:
         f"[output]计算结果:  当量比{str(chr(934))}: {equivalence_ratio:.4f}; "
         f"以百分比表示: {equivalence_ratio_percent:.2f}%; "
         f"过量空气系数{str(chr(955))}:{excess_air:.2f}")
-
-
 
 # 对于CH4-H2混合燃料而言，求特定当量比和掺氢比下的空气流速，包括定当量比，变掺氢比与定掺氢比，变当量比两种选择(d、c)（针对的边界条件为同轴燃烧器）
 elif situation == 2:
@@ -126,4 +117,4 @@ else:
     print("[tip]情景选择错误，请重新开始。")
 
 # 保持窗口处于待命状态，退出/结束程序需键入回车指令：Enter
-input("Press enter to exit ;)")
+input("Press Enter to exit ;)")
