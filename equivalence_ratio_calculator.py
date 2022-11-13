@@ -1,4 +1,3 @@
-# push
 # 预设的基本常量
 
 # unit m 几何尺寸 （(默认的几何结构参数)
@@ -12,6 +11,7 @@ density_ch4 = 0.65
 density_air = 1.23
 density_h2 = 0.09
 
+# 同轴射流燃烧器结构示意图
 print(
 '''
               =======================================
@@ -31,11 +31,10 @@ print(f'''
       inlet thickness of bluff body = {bluff_thickness}
       inlet outer diameter of air = {inlet_diameter_of_air_out}
       inlet inner diameter of air = {inlet_diameter_of_air_in}
-      
       ''')
 
 print("-----燃烧器的几何参数确定-----")
-geometry_parameter_confirm = input("[in]请确认是否需要修改以上参数?[y/n]")
+geometry_parameter_confirm = input("[in]请确认是否需要修改以上参数?[y/n]:")
 
 if 'y' == geometry_parameter_confirm:
     print("[tip]若要调整此次计算的结构参数，请分别指定以下参数值(Unit:m):")
