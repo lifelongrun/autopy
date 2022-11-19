@@ -114,5 +114,5 @@ elif situation == 2:
 else:
     print("[tip]情景选择错误，请重新开始。")
 
-# 保持窗口处于待命状态，退出/结束程序需键入回车指令：Enter
+# 保持窗口处于待命状态，退出/结束程序需键入回车指令：键入Enter
 input("Press Enter to exit ;)")
