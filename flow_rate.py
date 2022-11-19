@@ -1,7 +1,7 @@
 print('--------根据燃气灶的功率计算燃气灶入口的体积流量大小--------')
 # 定义函数用于体积流量单位转换：m3/h -> L/min
 def volume_converted(m3_per_h):
-    # define a function to convert the flow rate in volume per h into liter per min
+    # to convert the flow rate unit from m3/h to L/min
     L_per_min = 60/10**3*m3_per_h
     return L_per_min
 
@@ -25,22 +25,19 @@ volume_flow_rate_ng = nominal_heat_input*3.6/LHV_ch4
 
 # 打开一个txt文本开始写入内容
 f = open('flow_rate.txt','w+')
-#f2 = open('address.csv','w')
 
 f.write('--------根据燃气灶的功率计算燃气灶入口的体积流量大小--------\n')
 
-#f.write(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h {volume_converted(volume_flow_rate_ng):4f} L/min \n')
+f.write(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h {volume_converted(volume_flow_rate_ng):4f} L/min \n')
 print(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h {volume_converted(volume_flow_rate_ng):4f} L/min \n')
-#f2.write(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h {volume_converted(volume_flow_rate_ng):4f} L/min \n')
 
-flow_rate_ng = volume_converted(volume_flow_rate_ng) # 天然气流量
-flow_rate_h2 = 0 # 氢气流量
-h2_ratio_in_vol= 0.00  # 氢气的初始体积分数
+flow_rate_ng = volume_converted(volume_flow_rate_ng)  # 天然气流量
+flow_rate_h2 = 0  # 氢气流量
+h2_ratio_in_vol = 0.00  # 氢气的初始体积分数
 
 # print the header for reference
-print("  掺氢比 | 天然气流量 (L/min) | 氢气流量 (L/min)")
-
-f.write("  掺氢比 | 天然气流量 (L/min) | 氢气流量 (L/min)\n")
+print("  掺氢比 | 天然气流量 (L/min) | 氢气流量 (L/min)")  # 显示到窗口
+f.write("  掺氢比 | 天然气流量 (L/min) | 氢气流量 (L/min)\n")  # 显示到文本文件
 
 '''
 make a template aligns and displays the datas in the proper format
@@ -52,7 +49,7 @@ write_template = '{h2_ratio:>7.4f} | {ng_flow_rate:>16.4f} | {h2_flow_rate:>13.4
 # 另一写法: write_template = '{:>7.4f} | {:>7.4f} | {:>7.4}'
 
 # 采用一个循环写入各个掺氢比下的 [天然气流量] 以及[空气流量]
-while h2_ratio_in_vol <= 0.30 : # 掺氢比为0.30
+while h2_ratio_in_vol <= 0.30:  # 掺氢比为0.30
     # 依次向template中写入 掺氢比 天然气流量 氢气流量
     row = write_template.format(h2_ratio=h2_ratio_in_vol,ng_flow_rate=flow_rate_ng*(1-h2_ratio_in_vol),h2_flow_rate=flow_rate_ng*h2_ratio_in_vol)
     # 另一写法: row = write_template.format(h2_ratio_in_vol, flow_rate_ng * (1 - h2_ratio_in_vol),flow_rate_ng * h2_ratio_in_vol)
@@ -66,7 +63,7 @@ while h2_ratio_in_vol <= 0.30 : # 掺氢比为0.30
 
     print(f"{row}")
 
-    h2_ratio_in_vol +=0.05 # 掺氢量按0.05递增
+    h2_ratio_in_vol +=0.05  # 掺氢量按0.05递增
 
 # 关闭所打开文件
 f.close()
