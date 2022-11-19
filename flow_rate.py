@@ -28,8 +28,8 @@ f = open('flow_rate.txt','w+')
 
 f.write('--------根据燃气灶的功率计算燃气灶入口的体积流量大小--------\n')
 
-f.write(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h {volume_converted(volume_flow_rate_ng):4f} L/min \n')
-print(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h {volume_converted(volume_flow_rate_ng):4f} L/min \n')
+f.write(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h = {volume_converted(volume_flow_rate_ng):4f} L/min \n')
+print(f'燃料体积流量为: {volume_flow_rate_ng:.4f} m3/h = {volume_converted(volume_flow_rate_ng):4f} L/min \n')
 
 flow_rate_ng = volume_converted(volume_flow_rate_ng)  # 天然气流量
 flow_rate_h2 = 0  # 氢气流量
