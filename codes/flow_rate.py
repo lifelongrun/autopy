@@ -24,7 +24,7 @@ nominal_heat_input = 4.0
 volume_flow_rate_ng = nominal_heat_input*3.6/LHV_ch4
 
 # 打开一个txt文本开始写入内容
-f = open('flow_rate.txt','w+')
+f = open('flow_rate.txt', 'w+')
 
 f.write('--------根据燃气灶的功率计算燃气灶入口的体积流量大小--------\n')
 
