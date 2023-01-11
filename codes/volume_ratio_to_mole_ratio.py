@@ -21,4 +21,4 @@ m_ch4_per_cent = (density_ch4*v_ch4)/((density_ch4*v_ch4)+(density_h2*(1-v_ch4))
 
 print(f"The transformed results is :\n"
       f"{n_ch4_per_cent:.4f} (CH4 in mole fraction);{1-n_ch4_per_cent:.4f} (H2 in mole fraction)\n"
-      f"{m_ch4_per_cent:.4f} (CH4 in mass fraction);{1-m_ch4_per_cent:.4f} (H2 in mass fraction) ")
+      f"{m_ch4_per_cent:.4f} (CH4 in mavolume_ratio_to_mole_ratio.pyss fraction);{1-m_ch4_per_cent:.4f} (H2 in mass fraction) ")

@@ -24,7 +24,7 @@ print('''
 ''')
 
 print(f'''
-如上图所示,本次计算的几何模型为同轴燃烧器,其中心轴为燃料入口,外环为空气入口,其间隔着一个( (⚪) )圆环形且厚度为thickness的bluff body。
+如上图所示,本次计算的几何模型为同轴燃烧器,其中心轴为燃料入口,外环为空气入口,其间隔着一个( (O) )圆环形且厚度为thickness的bluff body。
       默认结构参数如下:
       inlet diameter of fuel = {inlet_diameter_of_fuel}
       inlet thickness of bluff body = {bluff_thickness}
