@@ -11,11 +11,9 @@ print('''
 ''')
 
 # unit m2 流通截面积 (根据几何模型参数计算【单位：mm】, 注意结果单位需由mm2转换为m2)
-# cross_area_air = 2 * 2 * (4 - 0.75 - 0.25) / 10**(-6)  # 原fuel入口直径为1.5mm
-# cross_area_fuel = 1.5 * 2 / 10**(-6)
 
-cross_area_air = 2 * 1 * 1.75 / 10**(-6)
-cross_area_fuel = 1 * 0.3 / 10**(-6)
+cross_area_air = 2 * 1 * 1.75 / 10**(-6) # 2 为左右两个空气入口， 1 为高度，1.75为宽度
+cross_area_fuel = 1 * 0.3 / 10**(-6) # 0.3 为中心燃料入口宽度
 
 # unit kg/m3 密度 (通用)
 density_ch4 = 0.65
