@@ -28,3 +28,11 @@ elif '圆环' == choice:
 else:
     print('Please choose the value from the 4 choices!')
 # ---------------------------对于圆管入口，水利直径等于入口横截面直径
+
+# 计算coflow的水利直径
+
+wetted_perimeter = 0.305*4+0.05*3.14
+
+flow_section = 0.305**2-3.14/4*0.05**2
+
+results = 4 * flow_section / wetted_perimeter
