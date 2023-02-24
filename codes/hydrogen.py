@@ -15,7 +15,7 @@ density_of_air = 1.23 # kg/m3
 # ------END------
 
 # ------运行前请检查各个参数是否有误------
-velocity_of_fuel_inlet = 1.0
+velocity_of_fuel_inlet = 6
 area_of_cross_section_of_fuel_inlet = 0.3*1e-6
 area_of_cross_section_of_air_inlet = 2.5e-6
 equivalence_ratio = 0.6
