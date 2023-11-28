@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取Excel文件
-file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx"
+file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日22时12分-ve4.5-eq0.6-H20-BB.xlsx"
 df = pd.read_excel(file_path, header=3)
 # 指定从列标题: header=x 其中x是标题行的行序为第x+1行(默认从0开始)
 # sep="\t"
