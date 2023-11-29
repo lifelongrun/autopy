@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 读取Excel文件
-file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日22时12分-ve4.5-eq0.6-H20-BB.xlsx"
+file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日20时52分-ve3.5-eq0.6-H80-BB.xlsx"
 df = pd.read_excel(file_path, header=3)
 # 指定从列标题: header=x 其中x是标题行的行序为第x+1行(默认从0开始)
 # sep="\t"
@@ -23,9 +23,9 @@ df['A_n'] = pd.to_numeric(df['A_n'], errors='coerce')
 # 分组并计算每个R_n下最后几行个T1值的平均温度（最后行不取）, 数据类型为Pandas中的DaraFrame
 average_temperatures_A_n = df.groupby('A_n')[['温度5']].apply(lambda x: x.iloc[-5:-1].mean()) # 从倒数第2行开始取，直到倒数第5行，共计4行数据点
 
-# 打印结果
-print(f"水平位置及对应平均温度：\n{average_temperatures_R_n}\n"
-      f"竖向位置及对应平均温度：\n{average_temperatures_A_n}")
+# 打印结果(unsorted_dataframe)
+print(f"水平位置及对应平均温度(unsorted_dataframe)：\n{average_temperatures_R_n}\n"
+      f"竖向位置及对应平均温度(unsorted_dataframe)：\n{average_temperatures_A_n}")
 
 # 单独输出为一个Excel文件(含单个工作表)
 # average_temperatures_A_n.to_excel(r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\ve3.5-eq0.6-H60-A_n.xlsx')

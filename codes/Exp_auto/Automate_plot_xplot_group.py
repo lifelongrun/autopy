@@ -13,9 +13,9 @@ plt.rcParams['axes.unicode_minus'] = False
 # Excel文件路径列表
 excel_files = [
     # 文件路径列表, 报错信息，逗号分隔符
-    # ...
+    # ...✅/❎/🟢/🔴/🕝➡️
 # 不同流速，3mm热电偶测温（加6.3mm套管后）
-    # ---eq0.6-ve1.5-5-H00---
+    # ---ve1.5-5.0-eq0.6-H00---✅
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日15时23分-ve5.0-eq0.6-H00-BB.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日15时56分-ve4.5-eq0.6-H00-BB.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日16时26分-ve4-eq0.6-H00-BB.xlsx",
@@ -24,11 +24,28 @@ excel_files = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日18时48分-ve2.5-eq0.6-H00-BB.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日18时16分-ve2.0-eq0.6-H00-BB.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日19时37分-ve1.5-eq0.6-H00-BB.xlsx",
-    # ---eq0.6-ve1.5-5-H20---
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日20时30分-ve1.5-eq0.6-H20-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时09分-ve2.5-eq0.6-H20-BB.xlsx",
+    # ---ve1.5-5-eq0.6-H20---✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日20时30分-ve1.5-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日13时52分-ve2.0-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时09分-ve2.5-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日14时29分-ve3.0-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日15时07分-ve4.0-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日22时12分-ve4.5-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日16时48分-ve5.0-eq0.6-H20-BB.xlsx",
+
+# 不同掺氢比: 3mm热电偶测温（加6.3mm套管后）
+    # ---ve3.5-eq0.5-H00-H100---
+    # ---ve3.5-eq0.6-H00-H100---🕝➡️🟢
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日17时12分-ve3.5-eq0.6-H00-BB.xlsx",
     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日22时12分-ve4.5-eq0.6-H20-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时03分-ve3.5-eq0.6-H40-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时39分-ve3.5-eq0.6-H60-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日20时52分-ve3.5-eq0.6-H80-BB.xlsx",
+    # ---ve3.5-eq0.7-H00-H100---
+    # ---ve3.5-eq0.8-H00-H100---
+
+
     # 添加更多文件路径...
 ]
 
@@ -37,7 +54,7 @@ excel_files = [
 # 为第一张图创建DataFrame
 # ---将dataframe中的数据写入到Excel文件中---
 # 指定 Excel 文件路径及文件名（无论是否存在）
-output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\vex-eq0.6-BB_A_R_n_T-test111.xlsx"
+output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\vex-eq0.6-BB_A_R_n_T-test123.xlsx"
 prefix_sheet_name = "vex-eq0.5-H20-BB"
 new_sheet_name_for_A_n = prefix_sheet_name + '_A_n_T'
 new_sheet_name_for_R_n = prefix_sheet_name + '_R_n_T'
@@ -108,21 +125,22 @@ print(df_list_of_second_chart_df)
 
 # 输出两种图表的结果到同个Excel文件中的两张分表中
 # ---将dataframe中的数据写入到Excel文件中---
-
-
-try:
-    # 写入数据到 Excel 文件
-    # 检查文件是否存在，如果不存在则使用写入模式
-    if os.path.exists(output_excel_file):
-        mode = 'a'  # 追加模式
-    else:
-        mode = 'w'  # 写入模式
-    # df_list_first_chart_df.to_excel(output_excel_file, sheet_name=new_sheet_name_for_R_n, index=True)
-    with pd.ExcelWriter(output_excel_file, engine='openpyxl', mode=mode) as writer:
-        # 检查工作簿中是否已存在这些工作表
-        if 'new_sheet_name_for_A_n' not in writer.book.sheetnames:
-            df_list_first_chart_df.to_excel(writer, sheet_name=new_sheet_name_for_A_n)
-        if 'A_n_T_ave' not in writer.book.sheetnames:
-            df_list_of_second_chart_df.to_excel(writer, sheet_name=new_sheet_name_for_R_n)
-except PermissionError:
-    print(f"Permission denied when writing to {output_excel_file}. Please close the file if it's open in another program.")
+if "y" == input("是否将表中数据（轴向&径向温度）输出为Excel文件？[y/n]"):
+    try:
+        # 写入数据到 Excel 文件
+        # 检查文件是否存在，如果不存在则使用写入模式
+        if os.path.exists(output_excel_file):
+            mode = 'a'  # 追加模式
+        else:
+            mode = 'w'  # 写入模式
+        # df_list_first_chart_df.to_excel(output_excel_file, sheet_name=new_sheet_name_for_R_n, index=True)
+        with pd.ExcelWriter(output_excel_file, engine='openpyxl', mode=mode) as writer:
+            # 检查工作簿中是否已存在这些工作表
+            if 'new_sheet_name_for_A_n' not in writer.book.sheetnames:
+                df_list_first_chart_df.to_excel(writer, sheet_name=new_sheet_name_for_A_n)
+            if 'A_n_T_ave' not in writer.book.sheetnames:
+                df_list_of_second_chart_df.to_excel(writer, sheet_name=new_sheet_name_for_R_n)
+    except PermissionError:
+        print(f"Permission denied when writing to {output_excel_file}. Please close the file if it's open in another program.")
+else:
+    print("不输出Excel文件。")
