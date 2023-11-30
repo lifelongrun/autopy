@@ -35,17 +35,45 @@ excel_files = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日16时48分-ve5.0-eq0.6-H20-BB.xlsx",
 
 # 不同掺氢比: 3mm热电偶测温（加6.3mm套管后）
-    # ---ve3.5-eq0.5-H00-H100---
-    # ---ve3.5-eq0.6-H00-H100---🕝➡️🟢
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日17时12分-ve3.5-eq0.6-H00-BB.xlsx",
+    # ---ve3.5-eq0.5-H00-H100---对比工况：不同当量比
+    # ---ve3.5-eq0.6-H00-H100---✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日17时12分-ve3.5-eq0.6-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时03分-ve3.5-eq0.6-H40-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时39分-ve3.5-eq0.6-H60-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日20时52分-ve3.5-eq0.6-H80-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日21时54分-ve3.5-eq0.6-H100-BB.xlsx",
+    # ---ve3.5-eq0.7-H00-H100---对比工况：不同当量比
+    # ---ve3.5-eq0.8-H00-H100---对比工况：不同当量比
+
+# 不同当量比: 3mm热电偶测温（加6.3mm套管后）
+    # ---ve3.5-eq0.4-1.4-H00---🟢# todo this is the one (second
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.4-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.5-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.6-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.7-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.8-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.9-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.0-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.1-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.2-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.3-H00-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.4-H00-BB.xlsx",
+    # ---ve3.5-eq0.4-1.4-H20---🕝➡️🟢 todo this is the one (first
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日10时40分-ve3.5-eq0.4-H20-BB.xlsx", #轴向后半段关注
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日10时00分-ve3.5-eq0.5-H20-BB.xlsx", #轴向后半段关注
     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时03分-ve3.5-eq0.6-H40-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时39分-ve3.5-eq0.6-H60-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日20时52分-ve3.5-eq0.6-H80-BB.xlsx",
-    # ---ve3.5-eq0.7-H00-H100---
-    # ---ve3.5-eq0.8-H00-H100---
-
-
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日22时33分-ve3.5-eq0.7-H20-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日11时49分-ve3.5-eq0.8-H20-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日12时29分-ve3.5-eq0.9-H20-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日13时26分-ve3.5-eq1.0-H20-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日14时21分-ve3.5-eq1.1-H20-BB.xlsx"
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq0.9-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.0-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.1-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.2-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.3-H20-BB.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.4-H20-BB.xlsx",
     # 添加更多文件路径...
 ]
 
@@ -54,7 +82,7 @@ excel_files = [
 # 为第一张图创建DataFrame
 # ---将dataframe中的数据写入到Excel文件中---
 # 指定 Excel 文件路径及文件名（无论是否存在）
-output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\vex-eq0.6-BB_A_R_n_T-test123.xlsx"
+output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Thesis_CFD_work.xlsx"
 prefix_sheet_name = "vex-eq0.5-H20-BB"
 new_sheet_name_for_A_n = prefix_sheet_name + '_A_n_T'
 new_sheet_name_for_R_n = prefix_sheet_name + '_R_n_T'

@@ -42,17 +42,24 @@ excel_files = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve5.0-eq0.6-H20-BB-400mm.xlsx",
 
 # 不同掺氢比: 3mm热电偶测温（加6.3mm套管后）
-    # Hy---ve3.5-eq0.6-H00-100---👀🟢‼️
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H40-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H60-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H80-BB-400mm.xlsx",
+    # Hy---ve3.5-eq0.6-H00-100---✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H40-BB-400mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H60-BB-400mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H80-BB-400mm.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H100-BB-400mm.xlsx",
+    # Hy---ve3.5-eq0.7-H00-100---👀🟢‼️
 
 
-
-
+# 不同当量比: 3mm热电偶测温（加6.3mm套管后）
+    # eq---ve3.5-eq0.4-1.4-H00---🕝➡️🟢 todo this is the one (first
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.4-H20-BB-400mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.5-H20-BB-400mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.7-H20-BB-400mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.8-H20-BB-400mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.9-H20-BB-400mm.xlsx",
 
 
                ]  # 替换为实际文件名
@@ -106,8 +113,8 @@ print(average_df)
 # ---将dataframe中的数据写入到Excel文件中---
 if "y" == input("是否将表中数据（烟气数据）输出为Excel文件？[y/n]"):
     # 指定 Excel 文件路径及文件名（无论是否存在）
-    output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\exit-vex-eq0.6-H00-20-BB-3.0min.xlsx"
-    new_sheet_name = 've1.5-5.0-eq0.6-H20'
+    output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\exit-ve3.5-eq0.6-H20-BB-28-29.xlsx" # 替换为实际文件名
+    new_sheet_name = 've3.5-eq0.6-H20' # 每次运行前，修改这里的工作表名称
     # 将数据写入到 Excel 文件的指定工作表中
     # average_df.to_excel(output_excel_file, sheet_name=new_sheet_name, index=True)
 
