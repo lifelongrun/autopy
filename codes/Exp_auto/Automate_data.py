@@ -2,7 +2,7 @@ import pandas as pd
 
 # 读取Excel文件
 # todo to update the file path of pre-processed data
-file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日10时57分-ve3.5-eq0.8-H100-BB.xlsx"
+file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日17时18分-ve3.5-eq1.2-H100-BB.xlsx"
 df = pd.read_excel(file_path, header=3)
 # 指定从列标题: header=x 其中x是标题行的行序为第x+1行(默认从0开始)
 # sep="\t"

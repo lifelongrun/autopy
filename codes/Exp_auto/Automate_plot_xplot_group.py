@@ -13,7 +13,7 @@ plt.rcParams['axes.unicode_minus'] = False
 # Excel文件路径列表
 excel_files = [
     # 文件路径列表, 报错信息，逗号分隔符
-    # ...✅/❎/🟢/🔴/🕝➡️
+    # ...✅/❎/🟢/🔴/🕝➡️/👀
 # 不同流速，3mm热电偶测温（加6.3mm套管后）
     # ---ve1.5-5.0-eq0.6-H00---✅
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日15时23分-ve5.0-eq0.6-H00-BB.xlsx",
@@ -34,44 +34,56 @@ excel_files = [
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日22时12分-ve4.5-eq0.6-H20-BB.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日16时48分-ve5.0-eq0.6-H20-BB.xlsx",
 
-# 不同掺氢比: 3mm热电偶测温（加6.3mm套管后）
-    # ---ve3.5-eq0.6-H00-H100---✅
+# 不同掺氢比(eq0.6/0.8/1.0/1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
+    # ---ve3.5-eq0.6-H00-H100--- ✅
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日17时12分-ve3.5-eq0.6-H00-BB.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时03分-ve3.5-eq0.6-H40-BB.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日19时39分-ve3.5-eq0.6-H60-BB.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日20时52分-ve3.5-eq0.6-H80-BB.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日21时54分-ve3.5-eq0.6-H100-BB.xlsx",
-    # Hy---ve3.5-eq0.8-H00-H100--- 🟢/👀/➡️ todo T data eq0.8-H00-H100-BB state: 12/06 ing
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日22时24分-ve3.5-eq0.8-H40-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月05日10时05分-ve3.5-eq0.8-H60-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月05日10时54分-ve3.5-eq0.8-H80-BB.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日10时57分-ve3.5-eq0.8-H100-BB.xlsx",
-    # Hy---ve3.5-eq1.0-H00-H100--- 🟢/👀/➡️ todo T data eq1.0-H00-H100-BB state: Not yet
-
-    # Hy---ve3.5-eq1.2-H00-H100--- 🟢/👀/➡️ todo T data eq1.2-H00-H100-BB state: Not yet
-
+    # Hy---ve3.5-eq0.8-H00-H100--- ✅
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日17时26分-ve3.5-eq0.8-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日11时49分-ve3.5-eq0.8-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日22时24分-ve3.5-eq0.8-H40-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月05日10时05分-ve3.5-eq0.8-H60-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月05日10时54分-ve3.5-eq0.8-H80-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日10时57分-ve3.5-eq0.8-H100-BB.xlsx",
+    # Hy---ve3.5-eq1.0-H00-H100--- ✅
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日19时16分-ve3.5-eq1.0-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日13时26分-ve3.5-eq1.0-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日14时04分-ve3.5-eq1.0-H40-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日13时13分-ve3.5-eq1.0-H60-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日12时23分-ve3.5-eq1.0-H80-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日11时41分-ve3.5-eq1.0-H100-BB.xlsx",
+    # Hy---ve3.5-eq1.2-H00-H100--- ✅ todo done
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日20时45分-ve3.5-eq1.2-H00-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日21时48分-ve3.5-eq1.2-H20-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日14时41分-ve3.5-eq1.2-H40-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日15时59分-ve3.5-eq1.2-H60-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日16时37分-ve3.5-eq1.2-H80-BB.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日17时18分-ve3.5-eq1.2-H100-BB.xlsx",
 # 不同当量比(H00/H20): 3mm热电偶测温（加6.3mm套管后）
     # ---ve3.5-eq0.4-1.2-H00---✅
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日15时58分-ve3.5-eq0.4-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月03日15时12分-ve3.5-eq0.5-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日17时12分-ve3.5-eq0.6-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日16时39分-ve3.5-eq0.7-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日17时26分-ve3.5-eq0.8-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日18时32分-ve3.5-eq0.9-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日19时16分-ve3.5-eq1.0-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日19时59分-ve3.5-eq1.1-H00-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日20时45分-ve3.5-eq1.2-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日15时58分-ve3.5-eq0.4-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月03日15时12分-ve3.5-eq0.5-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日17时12分-ve3.5-eq0.6-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日16时39分-ve3.5-eq0.7-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日17时26分-ve3.5-eq0.8-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日18时32分-ve3.5-eq0.9-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日19时16分-ve3.5-eq1.0-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日19时59分-ve3.5-eq1.1-H00-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日20时45分-ve3.5-eq1.2-H00-BB.xlsx",
     # ---ve3.5-eq0.4-1.2-H20---✅
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日10时40分-ve3.5-eq0.4-H20-BB.xlsx", #轴向后半段关注
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日10时00分-ve3.5-eq0.5-H20-BB.xlsx", #轴向后半段关注
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日22时33分-ve3.5-eq0.7-H20-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日11时49分-ve3.5-eq0.8-H20-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日12时29分-ve3.5-eq0.9-H20-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日13时26分-ve3.5-eq1.0-H20-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日14时21分-ve3.5-eq1.1-H20-BB.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日21时48分-ve3.5-eq1.2-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日10时40分-ve3.5-eq0.4-H20-BB.xlsx", #轴向后半段关注
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日10时00分-ve3.5-eq0.5-H20-BB.xlsx", #轴向后半段关注
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月28日21时40分-ve3.5-eq0.6-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月29日22时33分-ve3.5-eq0.7-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日11时49分-ve3.5-eq0.8-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日12时29分-ve3.5-eq0.9-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日13时26分-ve3.5-eq1.0-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年11月30日14时21分-ve3.5-eq1.1-H20-BB.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月04日21时48分-ve3.5-eq1.2-H20-BB.xlsx",
 
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.3-H20-BB.xlsx", #exit测了，但温度数据没测↓(eq1.3, 1.4不做)
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\xxxxx-ve3.5-eq1.4-H20-BB.xlsx",
