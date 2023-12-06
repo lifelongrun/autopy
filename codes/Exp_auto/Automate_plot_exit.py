@@ -22,49 +22,69 @@ excel_files = [
 # ...✅/❎/🟢/👀/➡️
 # 不同流速，3mm热电偶测温（加6.3mm套管后）
     # ve---ve1.5-5-eq0.6-H00---✅
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve1.5-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve2.0-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve2.5-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.0-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.0-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.5-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve5.0-eq0.6-H00-BB-400mm.xlsx",
-
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve1.5-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve2.0-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve2.5-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.0-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.0-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.5-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve5.0-eq0.6-H00-BB-400mm.xlsx",
     # ve---ve1.5-5-eq0.6-H20---✅
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve1.5-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve2.0-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-28-ve2.5-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.0-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.0-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.5-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve5.0-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve1.5-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve2.0-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-28-ve2.5-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.0-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.0-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve4.5-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve5.0-eq0.6-H20-BB-400mm.xlsx",
 
 # 不同掺氢比: 3mm热电偶测温（加6.3mm套管后）
     # Hy---ve3.5-eq0.6-H00-100---✅
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H40-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H60-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H80-BB-400mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H100-BB-400mm.xlsx",
-    # Hy---ve3.5-eq0.7-H00-100---👀🟢‼️
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H40-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H60-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H80-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H100-BB-400mm.xlsx",
+    # Hy---ve3.5-eq0.8-H00-100---🟢/👀/➡️ todo exit data eq0.8-H00-H100-BB state: 12/06 ing
 
 
-# 不同当量比: 3mm热电偶测温（加6.3mm套管后）
-    # eq---ve3.5-eq0.4-1.4-H00---🕝➡️🟢 todo this is the one (first
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.4-H20-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.5-H20-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.7-H20-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.8-H20-BB-400mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.9-H20-BB-400mm.xlsx",
 
+    # Hy---ve3.5-eq1.0-H00-100---🟢/👀/➡️ todo exit data eq1.0-H00-H100-BB state: not yet
+
+    # Hy---ve3.5-eq1.2-H00-100---🟢/👀/➡️ todo exit data eq1.2-H00-H100-BB state: not yet
+
+
+# 不同当量比(H00/H20): 3mm热电偶测温（加6.3mm套管后）
+    # eq---ve3.5-eq0.4-1.4-H20---✅
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.4-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.5-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.7-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.8-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq0.9-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq1.0-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq1.1-H20-BB-400mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq1.2-H20-BB-400mm.xlsx",
+        # eq1.3&1.4不做温度数据
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq1.3-H20-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-30-ve3.5-eq1.4-H20-BB-400mm.xlsx",
+    # eq---ve3.5-eq0.4-1.4-H00---✅
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq0.4-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-03-ve3.5-eq0.5-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-11-29-ve3.5-eq0.6-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq0.7-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq0.8-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq0.9-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq1.0-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq1.1-H00-BB-400mm.xlsx",
+        # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Exit\2023-12-04-ve3.5-eq1.2-H00-BB-400mm.xlsx",
 
                ]  # 替换为实际文件名
 columns_of_interest = ["% O2", "ppm CO", "ppm NO", "°C 烟温", 'ppm NOx', "% CO2IR", "ppm HC"]  # 替换为实际列名
-num_rows = 12  # 指定要读取的最后x行（5s采集一次，即5s写入一行，取最后3-5分钟的烟气数据）
+num_rows = 12  # 指定要读取的最后x行（5s采集一次，即5s写入一行，取最后0.5-1分钟的烟气数据）
 
 # 处理每个文件并收集平均值
 averages = [process_excel_file(file, columns_of_interest, num_rows) for file in excel_files]
@@ -90,7 +110,6 @@ for i, column in enumerate(columns_of_interest):
 
     # 获取当前子图
     ax = axs[row_index, col_index]
-
     # 绘制柱状图
     ax.bar(average_df.index, average_df[column])
     ax.set_title(f'Average of {column}')
