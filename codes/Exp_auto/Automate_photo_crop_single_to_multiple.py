@@ -31,13 +31,7 @@ def batch_crop_images(input_folder, output_folder, chamber_coords):
             crop_to_burner_chamber(input_image_path, output_image_path, chamber_coords)
 
 
-# 使用字典存储燃烧腔室边框的坐标
-chamber_coords = {
-    "left": 2520,     # 替换为燃烧腔室边框的左上角x坐标
-    "top": 304,       # 替换为燃烧腔室边框的左上角y坐标
-    "right": 3480,    # 替换为燃烧腔室边框的右下角x坐标
-    "bottom": 3692    # 替换为燃烧腔室边框的右下角y坐标
-}
+
 
 # 多个文件夹的根路径列表
 root_folder_path = [
@@ -95,6 +89,15 @@ root_folder_path = [
 
     # 可添加多个/单个文件夹路径
 ]
+
+
+# 使用字典存储燃烧腔室边框的坐标, 重新调整裁剪边框的大小
+chamber_coords = {
+    "left": 2520,     # 替换为燃烧腔室边框的左上角x坐标
+    "top": 304,       # 替换为燃烧腔室边框的左上角y坐标
+    "right": 3480,    # 替换为燃烧腔室边框的右下角x坐标
+    "bottom": 3692    # 替换为燃烧腔室边框的右下角y坐标
+}
 
 # 遍历文件夹路径列表
 n = 1
