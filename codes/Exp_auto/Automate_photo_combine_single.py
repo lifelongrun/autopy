@@ -34,8 +34,8 @@ def resize_and_paste_with_exact_fit(flame_path, chamber_path, coordinates):
     return result_img
 
 # 使用示例
-flame_path = r"C:\Users\i3tig\Pictures\test\ve5.0-H00-resized.jpg"
-chamber_path = r"C:\Users\i3tig\Pictures\test\photo_combine\combustion_chamber_frame.png"
+flame_path =     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo\ve3.5-eq0.6-H40-BB-photo-cropped\Img700-cropped.jpg"
+chamber_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Thesis Graph\test\photo_combine\combustion_chamber_frame.png" # 替换为燃烧腔室图片的路径
 coordinates = {
     'left_top': (489, 136),
     'right_bottom': (2208, 6341)
@@ -45,9 +45,9 @@ result_img = resize_and_paste_with_exact_fit(flame_path, chamber_path, coordinat
 
 # 获取输入文件所在的文件夹路径
 input_folder_path = os.path.dirname(flame_path)
-
-file_name = os.path.basename(flame_path) # 去掉路径，仅获取文件名与扩展名
-output_image_path = os.path.join(input_folder_path, f"{os.path.splitext(file_name)[0]}-combined.png")  # 替换为裁剪后的图片保存路径：获取文件名，再joint一个新的标记后缀，组成新的文件名
+# 基于输入文件路径及名称对输出文件重命名，去掉路径，仅获取文件名与扩展名
+file_name = os.path.basename(flame_path)
+output_image_path = os.path.join(input_folder_path, f"{os.path.splitext(file_name)[0]}-pasted.png")  # 替换为裁剪后的图片保存路径：获取文件名，再joint一个新的标记后缀，组成新的文件名
 print(f"output image path: {output_image_path}")
 result_img.save(output_image_path)
 result_img.show()
