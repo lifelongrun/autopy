@@ -37,6 +37,7 @@ def resize_and_paste_with_exact_fit(flame_path, chamber_path, coordinates):
 flame_path =     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo\ve3.5-eq0.6-H40-BB-photo-cropped\Img700-cropped.jpg"
 chamber_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Thesis Graph\test\photo_combine\combustion_chamber_frame.png" # 替换为燃烧腔室图片的路径
 coordinates = {
+    # paste the flame image to the combustion chamber image at the following coordinates
     'left_top': (489, 136),
     'right_bottom': (2208, 6341)
 }

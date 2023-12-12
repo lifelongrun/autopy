@@ -15,7 +15,7 @@ def get_folder_paths(parent_folder):
     return folder_paths
 
 # 示例用法
-parent_folder = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo"  # 替换为包含文件夹的父文件夹路径
+parent_folder = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55"  # 替换为包含文件夹的父文件夹路径
 
 # 获取文件夹路径
 folder_paths = get_folder_paths(parent_folder)

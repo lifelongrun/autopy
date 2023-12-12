@@ -13,6 +13,6 @@ print(f"------it starts------")
 while n <= 10:
     pyautogui.click(coords["click"])
     time.sleep(t1)
-    print(f"拍摄状态：已拍摄第{n}张照片")
+    print(f"拍摄状态：已拍摄第{n}张照片，正在拍摄第{n+1}张")
     n += 1
 print(f"------it's done------")
