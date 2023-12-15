@@ -2,7 +2,7 @@ import pandas as pd
 
 # 读取Excel文件
 # todo to update the file path of pre-processed data
-file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\2023年12月06日17时18分-ve3.5-eq1.2-H100-BB.xlsx"
+file_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日21时07分-ve1.5-eq0.6-H20-BBS-65-below15mm.xlsx"
 df = pd.read_excel(file_path, header=3)
 # 指定从列标题: header=x 其中x是标题行的行序为第x+1行(默认从0开始)
 # sep="\t"
@@ -12,9 +12,13 @@ df['R_n'] = df['水平位置（mm）'].abs()
 # 确保R_n列是正确的数据类型，如果是字符串，可能需要转换为数值
 df['R_n'] = pd.to_numeric(df['R_n'], errors='coerce')
 
+# 原径向测温，选取的径向高度温度点[only for BB]
 # 分组并计算每个R_n下最后两个T1值的平均温度
-average_temperatures_R_n = df.groupby('R_n')[['温度1', '温度2', '温度3', '温度4']].apply(lambda x: x.iloc[-5:-1].mean())
-
+# average_temperatures_R_n = df.groupby('R_n')[['温度1', '温度2', '温度3', '温度4']].apply(lambda x: x.iloc[-5:-1].mean())
+# 或者
+# 原径向测温，选取的径向高度温度点[only for BBS-45/55/65];备注：多添加了两个径向高度下温度6和温度7的测量
+# 分组并计算每个R_n下最后两个T1值的平均温度
+average_temperatures_R_n = df.groupby('R_n')[['温度1', '温度2', '温度3', '温度4', '温度6', '温度7']].apply(lambda x: x.iloc[-5:-1].mean())
 
 # ---竖直轴温度数据---
 df['A_n'] = df['竖向位置（mm）'].abs()
