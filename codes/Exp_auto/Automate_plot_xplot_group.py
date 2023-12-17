@@ -141,7 +141,7 @@ excel_files = [
 # ------File directory format of experiment operation conditions for BBS-65-below15mm👇👇👇------
 # 不同燃料流速(ve1.5-5.0-eq0.6-H00/H20)，3mm热电偶测温（加6.3mm套管后）
     # ve---ve1.5-4.0-eq0.6-H00-BBS-65---✅ ve4.5/5.0 is forsaked -> redo ve1.5-4.5-eq0.6-H00-BBS-65
-    # todo to delete the original data wich is not used after the redo experiment
+    # todo to delete the original data wh+ich is not used after the redo experiment
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日11时19分-ve1.5-eq0.6-H00-BBS-65-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日10时38分-ve2.0-eq0.6-H00-BBS-65-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日11时59分-ve2.5-eq0.6-H00-BBS-65-below15mm.xlsx",
@@ -173,15 +173,21 @@ excel_files = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日17时15分-ve3.5-eq0.6-H80-BBS-65-below15mm.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日17时47分-ve3.5-eq0.6-H100-BBS-65-below15mm.xlsx",
     # Hy---ve3.5-eq0.8-H00-100-BBS-65--- 🔴
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日18时21分-ve3.5-eq0.8-H00-BBS-65-below15mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日19时25分-ve3.5-eq0.8-H20-BBS-65-below15mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日19时57分-ve3.5-eq0.8-H40-BBS-65-below15mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日20时32分-ve3.5-eq0.8-H60-BBS-65-below15mm.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日21时05分-ve3.5-eq0.8-H80-BBS-65-below15mm.xlsx",
-
-
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日18时21分-ve3.5-eq0.8-H00-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日19时25分-ve3.5-eq0.8-H20-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日19时57分-ve3.5-eq0.8-H40-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日20时32分-ve3.5-eq0.8-H60-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日21时05分-ve3.5-eq0.8-H80-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日21时37分-ve3.5-eq0.8-H100-BBS-65-below15mm.xlsx",
     # Hy---ve3.5-eq1.0-H00-100-BBS-65--- 🔴
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日22时12分-ve3.5-eq1.0-H00-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月17日16时40分-ve3.5-eq1.0-H20-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月17日17时16分-ve3.5-eq1.0-H40-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月17日17时47分-ve3.5-eq1.0-H60-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月17日18时19分-ve3.5-eq1.0-H80-BBS-65-below15mm.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月17日18时51分-ve3.5-eq1.0-H100-BBS-65-below15mm.xlsx",
     # Hy---ve3.5-eq1.2-H00-100-BBS-65--- 🔴
+
 # 不同当量比(eq0.4-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
     # eq---ve3.5-eq0.4-1.2-H00-BBS-65---🔴
     # eq---ve3.5-eq0.4-1.2-H20-BBS-65---🔴
