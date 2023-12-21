@@ -15,3 +15,5 @@ for line in coords_data:
     key, value = line.split(":")
     chamber_coords[key.strip()] = int(value.strip())
 print(f"corresponding coordinate of the chamber: {chamber_coords}")
+
+
