@@ -18,9 +18,9 @@ def create_unique_folder_name(base_path, folder_name):
 
 # 假设文件浏览器已打开，且基本路径是已知的
  # 更改为实际的基本路径,防止文件夹重名
-base_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-65-Below15mm"
+base_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm"
 # 更改为期望的文件夹名
-folder_name = 've3.5-eq0.4-H20-BBS-65-photo-below15mm'
+folder_name = 've3.5-eq0.6-H100-BBS-55-photo-below15mm'
 
 # 生成唯一的文件夹名
 
@@ -49,6 +49,7 @@ time.sleep(1)
 
 # 输入新文件夹的名称，假设为“MyNewFolder”，然后按 Enter
 pyautogui.write(unique_folder_name)
+# time.sleep(0.5)
 pyautogui.press('enter')
 
 # 等待文件夹创建
