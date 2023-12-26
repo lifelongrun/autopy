@@ -1,31 +1,29 @@
 import time
 import pyautogui
 
+'''
+中断程序：
+way1: 回到此界面，快捷键ctrl+F2: 退出/
+way2: 将光标不断移回至屏幕右下角：退出/
 
-# ctrl+F2: 退出
-
-# 等待Anki程序启动并获得焦点
-
-pyautogui.click(x=1481, y=1568)  # 替换成Anki窗口的坐标
-time.sleep(2)  # 可能需要根据Anki启动时间进行调整
-pyautogui.click(x=920, y=735)  # 替换成Anki窗口中需要进入的卡牌组的坐标
-time.sleep(1)
-pyautogui.click(x=1447, y=597)  # 替换成Anki窗口中需要进入的卡牌组的坐标
-time.sleep(1)
-# 手动进入卡牌组，等待更新，点击“Study"按钮,进入到单词卡牌界面
+'''
+n = 1
 
 try:
     while True:
         # 点击"Show"按钮
-        pyautogui.click(x=1277, y=1151)  # 替换成实际的按钮坐标
+        pyautogui.click(x=1924, y=1484)  # 替换成实际的按钮坐标
 
         # 等待1秒
-        time.sleep(1)
+        time.sleep(2)
 
         # 点击"Hard"按钮
-        pyautogui.click(x=1206, y=1250)  # 替换成实际的按钮坐标
+        pyautogui.click(x=1845, y=1484)  # 替换成实际的按钮坐标
 
         # 等待1秒
-        time.sleep(1)
+        time.sleep(2)
+
+        print(f"Loop: This one is the {n}th word")
+        n += 1
 except KeyboardInterrupt:
     pass

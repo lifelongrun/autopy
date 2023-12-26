@@ -35,6 +35,7 @@ def batch_crop_images(input_folder, output_folder, chamber_coords):
 
 # 多个文件夹的根路径列表
 root_folder_path = [
+# BB photo date: 2023.12.10✅ checked
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H00-BB-photo", # 另一裁剪边框坐标
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H20-BB-photo",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H00-BB-photo",
@@ -292,12 +293,90 @@ root_folder_path = [
 # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-65-Below15mm\ve5.0-eq0.6-H00-BBS-65-photo-below15mm",
 # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-65-Below15mm\ve5.0-eq0.6-H20-BBS-65-photo-below15mm",
 
+# BBS-55-below15mm photo date: 2023.12.26✅ checked
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\test folder",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve1.5-eq0.6-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve2.0-eq0.6-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve2.5-eq0.6-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.0-eq0.6-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.6-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.6-H100-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.6-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.6-H40-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.6-H60-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.6-H80-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.7-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.7-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.8-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.8-H100-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.8-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.8-H40-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.8-H60-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.8-H80-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.9-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq0.9-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.0-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.0-H100-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.0-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.0-H40-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.0-H60-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.0-H80-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.1-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.1-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H00-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H100-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H20-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H40-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H60-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H80-BBS-55-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve4.0-eq0.6-H20-BBS-55-photo-below15mm",
+
+# BBS-45-below15mm photo date: 2023.12.26✅ checked
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\test folder",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve1.5-eq0.6-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.0-eq0.6-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.5-eq0.6-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.0-eq0.6-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H100-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H40-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H60-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H80-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.7-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.7-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H100-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H40-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H60-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H80-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.9-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.9-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H100-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H40-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H60-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H80-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.1-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.1-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H00-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H100-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H20-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H40-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H60-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H80-BBS-45-photo-below15mm",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve4.0-eq0.6-H20-BBS-45-photo-below15mm",
+
+
     # 可添加多个/单个文件夹路径
 ]
 
 # ------全局变量设定------
 # 使用字典存储燃烧腔室边框的坐标, 重新调整裁剪边框的大小
-chamber_coords = {'left': 2583, 'top': 210, 'right': 3435, 'bottom': 3274}
+# chamber_coords = {'left': 2631, 'top': 208, 'right': 3446, 'bottom': 3199} # BBS-55 bellow photo date: 2023-12-26
+chamber_coords = {'left': 2633, 'top': 187, 'right': 3431, 'bottom': 3189} # BBS-45 bellow photo date: 2023-12-26
 # {
 #
 #     # BBS-45 photo date: 2023-12-10
