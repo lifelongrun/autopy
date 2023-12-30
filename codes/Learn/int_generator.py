@@ -15,7 +15,7 @@ def generate_random_numbers():
         sheet.append([random_number])
 
     # 保存Excel文件
-    workbook.save(r"E:\OneDrive\00_To_Do\random_numbers.xlsx")
+    workbook.save(r"E:\OneDrive\00_To_Do\random_numbers-2.xlsx")
 
 if __name__ == "__main__":
     generate_random_numbers()
