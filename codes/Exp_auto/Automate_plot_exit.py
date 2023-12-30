@@ -68,33 +68,33 @@ excel_files = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve5.0-H20-BB-exit.xlsx",
 # 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
     # Hy---ve3.5-eq0.6-H00-100-BB--- ✅
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\redo\2023-12-29-eq0.6-ve3.5-H00-BB-exit-re2.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H20-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H40-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H60-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H80-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H100-BB-exit.xlsx",
-    # Hy---ve3.5-eq0.8-H00-100-BB--- ✅
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H00-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\redo\2023-12-29-eq0.8-ve3.5-H20-BB-exit-o.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H40-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H60-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H80-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H100-BB-exit.xlsx",
-    # Hy---ve3.5-eq1.0-H00-100-BB--- ✅
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H00-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H20-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H40-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H60-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H80-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H100-BB-exit.xlsx",
-    # Hy---ve3.5-eq1.2-H00-100-BB--- ✅
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H00-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H20-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H40-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H60-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H80-BB-exit.xlsx",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H100-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\redo\2023-12-29-eq0.6-ve3.5-H00-BB-exit-re2.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H20-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H40-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H60-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H80-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.6-ve3.5-H100-BB-exit.xlsx",
+    # # Hy---ve3.5-eq0.8-H00-100-BB--- ✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H00-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\redo\2023-12-29-eq0.8-ve3.5-H20-BB-exit-o.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H40-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H60-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H80-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.8-ve3.5-H100-BB-exit.xlsx",
+    # # Hy---ve3.5-eq1.0-H00-100-BB--- ✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H00-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H20-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H40-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H60-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H80-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.0-ve3.5-H100-BB-exit.xlsx",
+    # # Hy---ve3.5-eq1.2-H00-100-BB--- ✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H00-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H20-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H40-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H60-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H80-BB-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq1.2-ve3.5-H100-BB-exit.xlsx",
 # 不同当量比(eq0.4-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
     # eq---ve3.5-eq0.4-1.2-H00-BB---✅
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BB-Exit\2023-12-29-eq0.4-ve3.5-H00-BB-exit.xlsx",
@@ -137,7 +137,44 @@ excel_files = [
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 
+    # ...✅/❎/🟢/🔴/🕝➡️/👀
+# ------File directory format of experiment operation conditions for BB/BBS-45/55/65-below15mm👇👇👇------
+# 不同燃料流速(ve1.5-4.0-eq0.6-H20)，3mm热电偶测温（加6.3mm套管后
+    # ve---ve1.5-4.0-eq0.6-H20-BBS-45---✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve1.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve2.0-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve2.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve3.0-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve3.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve4.0-H20-BBS-45-exit.xlsx",
+# 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
+    # Hy---ve3.5-eq0.6-H00-100-BBS-45--- 🔴
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve3.5-H20-BBS-45-exit.xlsx",
+    # Hy---ve3.5-eq0.8-H00-100-BBS-45--- 🔴
 
+    # Hy---ve3.5-eq1.0-H00-100-BBS-45--- 🔴
+
+    # Hy---ve3.5-eq1.2-H00-100-BBS-45--- 🔴
+
+# 不同当量比(eq0.6-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
+    # eq---ve3.5-eq0.6-1.2-H00-BBS-45---✅
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.7-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.8-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.9-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq1.0-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq1.1-ve3.5-H00-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq1.2-ve3.5-H00-BBS-45-exit.xlsx",
+    # eq---ve3.5-eq0.6-1.2-H20-BBS-45---🔴🕝
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.6-ve3.5-H20-BBS-45-exit.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.7-ve3.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.8-ve3.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq0.9-ve3.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq1.0-ve3.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq1.1-ve3.5-H20-BBS-45-exit.xlsx",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm-exit\2023-12-30-eq1.2-ve3.5-H20-BBS-45-exit.xlsx",
+# ----------------------------------------------------------------------------------------End👆👆👆------
 
 
 
