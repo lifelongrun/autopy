@@ -103,7 +103,7 @@ excel_files = [
 # ------BBS-45/55/65------
 # ------File directory format of experiment operation conditions for BBS-45-below15mm👇👇👇------
 # 不同燃料流速(ve1.5-4.0-eq0.6-H20)，3mm热电偶测温（加6.3mm套管后）
-    # ve---ve1.5-4.0-eq0.6-H20-BBS-45---✅
+    # ve---ve1.5-4.0-eq0.6-H20-BBS-45---✅ 已导出：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日19时28分-ve1.5-eq0.6-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日20时01分-ve2.0-eq0.6-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日20时37分-ve2.5-eq0.6-H20-BBS-45-below15mm.xlsx",
@@ -285,7 +285,7 @@ excel_files = [
 # 为第一张图创建DataFrame
 # ---将dataframe中的数据写入到Excel文件中---
 # 指定 Excel 文件路径及文件名（无论是否存在）
-output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Data_output_vexx-eqxx-Hxx_BBx.xlsx"
+output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Data_output_ve1.5-4.0-eq0.6-H20_BBS45.xlsx"
 prefix_sheet_name = "vex"
 new_sheet_name_for_A_n = prefix_sheet_name + '_A_n_T'
 new_sheet_name_for_R_n = prefix_sheet_name + '_R_n_T'

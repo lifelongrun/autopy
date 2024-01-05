@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 载入图片
-image_path = '/mnt/data/Img1097-cropped.jpg'
+image_path =  "Img2203-cropped.jpg"
 image = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
 # 锐化图片
@@ -53,7 +53,7 @@ if non_zero_columns.any() and non_zero_rows.any():
     cv2.line(marked_image, (0, bottom_row), (marked_image.shape[1], bottom_row), (0, 0, 255), 2)
 
     # 保存标记后的图片
-    marked_image_path = '/mnt/data/Img1097-marked.jpg'
+    marked_image_path = 'Image-marked-5.jpg'
     cv2.imwrite(marked_image_path, marked_image)
 else:
     print("Unable to find the flame in the image.")
