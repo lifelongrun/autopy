@@ -177,21 +177,21 @@ excel_files = [
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日18时21分-ve3.5-eq1.2-H100-BBS-45-blow15mm.xlsx",
 # 不同当量比(eq0.6-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
     # eq---ve3.5-eq0.6-1.2-H00-BBS-45---✅ 已导出：
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日15时40分-ve3.5-eq0.6-H00-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时06分-ve3.5-eq0.7-H00-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时42分-ve3.5-eq0.8-H00-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日15时09分-ve3.5-eq0.9-H00-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时08分-ve3.5-eq1.0-H00-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时26分-ve3.5-eq1.1-H00-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日21时19分-ve3.5-eq1.2-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日15时40分-ve3.5-eq0.6-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时06分-ve3.5-eq0.7-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时42分-ve3.5-eq0.8-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日15时09分-ve3.5-eq0.9-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时08分-ve3.5-eq1.0-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时26分-ve3.5-eq1.1-H00-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日21时19分-ve3.5-eq1.2-H00-BBS-45-below15mm.xlsx",
     # eq---ve3.5-eq0.6-1.2-H20-BBS-45---✅
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日21时45分-ve3.5-eq0.6-H20-BBS-45-below15mm.xlsx",
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时37分-ve3.5-eq0.7-H20-BBS-45-below15mm.xlsx",
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时10分-ve3.5-eq0.8-H20-BBS-45-below15mm.xlsx",
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日15时42分-ve3.5-eq0.9-H20-BBS-45-below15mm.xlsx",
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时39分-ve3.5-eq1.0-H20-BBS-45-below15mm.xlsx",
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时58分-ve3.5-eq1.1-H20-BBS-45-below15mm.xlsx",
-    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日20时46分-ve3.5-eq1.2-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日21时45分-ve3.5-eq0.6-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时37分-ve3.5-eq0.7-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时10分-ve3.5-eq0.8-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日15时42分-ve3.5-eq0.9-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时39分-ve3.5-eq1.0-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时58分-ve3.5-eq1.1-H20-BBS-45-below15mm.xlsx",
+        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日20时46分-ve3.5-eq1.2-H20-BBS-45-below15mm.xlsx",
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 # ------File directory format of experiment operation conditions for BBS-55-below15mm👇👇👇------
@@ -319,7 +319,7 @@ excel_files = [
 # ---write to excel---
 # ---将dataframe中的数据写入到Excel文件中---
 # 指定 Excel 文件路径及文件名（无论是否存在）
-output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Data_output_ve3.5-eq0.6-1.2-H00_BBS45-3sheets.xlsx"
+output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Data_output_ve3.5-eq0.6-1.2-H20_BBS45-1sheet-kelvin.xlsx"
 # 工作表名称前缀，区别摄氏度"℃"/开尔文"K"
 prefix_sheet_name = ["C", "K"]
 new_sheet_name_for_A_n_C = prefix_sheet_name[0] + '_A_n_T'
@@ -375,7 +375,7 @@ num_of_cols = 6  # 假设您想在每个文件中为前4列（除了X轴列）�
 # 字母序号列表
 letters = ['a', 'b', 'c', 'd', 'e', 'f']  # 根据需要的子图数量调整
 colors = ['red', 'green', 'blue', 'orange', 'yellow', 'black']  # 根据需要的子图数量调整
-plt.figure(figsize=(1, 10))  # 调整图表大小
+plt.figure(figsize=(20, 10))  # 调整图表大小
 
 df_R_n_list_of_second_chart = []
 index_list_second_chart = []
@@ -411,71 +411,60 @@ for file_path in excel_files:
         plt.ylabel('数值')
         plt.title(f"({letters[i-1]}){y_col}的X-Y图")
         plt.legend()
+
 # plt.tight_layout()  # 调整子图布局
 plt.show()
 # 将列表中的DataFrame合并为一个DataFrame, 采用concat合并这些DataFrame
-df_list_of_second_chart_df = pd.concat(df_R_n_list_of_second_chart, keys=index_list_second_chart)
+df_list_of_second_chart_df = pd.concat(df_R_n_list_of_second_chart, keys=index_list_second_chart, axis=1)
 # ----method 1 end----
 
+# #-----good 作用提取所有”温度1“的列, 并将这些列写入到同一个Excel文件的不同工作表中 it works!👍
+# # 筛选出所有列名中包含 "温度1" 的列
+# columns_with_temp1 = [col for col in all_R_n_x_ys_df.columns if "温度1" in col]
+#
+# # 提取这些列
+# temp1_df = all_R_n_x_ys_df[columns_with_temp1]
+# save_df_to_excel(temp1_df, output_excel_file, "temp1", index=True, prompt=False) # 索引选择True, 会将索引列输出到Excel文件中
+# #----good end
 
-# ------method 2: 不可用------#
 
-# 初始化一个空的 DataFrame 来存放所有数据
-# all_data_df = pd.DataFrame()
+# ------method 2: awesome'✅------#
+# 定义包含所有温度列名关键字的列表
+temperature_columns = ["温度1", "温度2", "温度3", "温度4", "温度6", "温度7"]
 
-# 为了确保我们提取所有的 '温度x' 列
-# temperature_columns = ["温度1", "温度2", "温度3", "温度4", "温度6", "温度7"]
+# 创建一个字典来存储每个温度的 DataFrame
+temperature_dfs = {}
 
-# 首先遍历一次以确定所有存在的温度列
-# for file_path in excel_files:
-#     print(file_path)
-    # df = pd.read_excel(file_path, sheet_name='R_n_T_ave')
-    # # 遍历每个文件并提取数据
-    # for file_path in excel_files:
-    #     df = pd.read_excel(file_path, sheet_name='R_n_T_ave')
-    #     base_name = os.path.splitext(os.path.basename(file_path))[0]
-    #
-    #     # 遍历所有温度列并提取数据
-    #     for col in temperature_columns:
-    #         new_col_name = f"{base_name}_{col}"  # 生成新的列名
-    #         if col in df:
-    #             all_data_df[new_col_name] = df[col]
-    #         else:
-    #             all_data_df[new_col_name] = pd.Series([None] * len(df))  # 如果列不存在，用 None 填充
+for temp in temperature_columns:
+    # 筛选出包含当前温度列名关键字的列
+    selected_columns = [col for col in all_R_n_x_ys_df.columns if temp in col]
 
-    # 此时，all_data_df 包含了所有文件的温度数据，每个文件的数据作为单独的列
-# print(all_data_df)
-
-# save_df_to_excel(all_data_df, output_excel_file, "New", index=True, prompt=False) # 索引选择True, 会将索引列输出到Excel文件中
-# 绘图
-# for i, y_col in enumerate(all_R_n_x_ys_df.columns[1:], start=1):  # 改动：使用 all_R_n_x_ys_df 的列进行迭代
-#     plt.subplot(2, 3, i)
-#     plt.plot(all_R_n_x_ys_df['R_n_X轴'], all_R_n_x_ys_df[y_col], linestyle='-', marker='s', label=y_col)
-#     plt.xlabel('X轴')
-#     plt.ylabel('数值 (K)')
-#     plt.title(f"({letters[i-1]}) {y_col}")
-#     plt.legend()
-# plt.tight_layout()
-# plt.show()
+    # 提取这些列并存储在字典中
+    temperature_dfs[temp] = all_R_n_x_ys_df[selected_columns]
+# print(temperature_dfs["温度2"])
+# 现在，temperature_dfs['温度1'] 将包含所有 '温度1' 的列，temperature_dfs['温度2'] 将包含所有 '温度2' 的列，以此类推。
+merged_all_R_n_df = pd.concat(temperature_dfs.values(), axis=1) # 将字典中的所有 DataFrame/Series 合并为一个 DataFrame，temperature_dfs.values() 返回一个包含所有 DataFrame 的列表
+merged_A_R_df = pd.concat([all_A_n_x_ys_df, merged_all_R_n_df], axis=1)
+save_df_to_excel(merged_A_R_df, output_excel_file, "K_both_A_R_n_T", index=True, prompt=False) # 索引选择True, 会将索引列输出到Excel文件中
 # ------method 2 end----
 
 
-# ----------------------Export and save data:----------------------
-# prompt=True, 会在输出Excel文件时，弹出对话框，询问是否覆盖已有文件
-wait_4users_prompt = True
-# worksheet 1-2th, C
-# ✅ save graph data for first chart, units: Celsius
-print(f"1st worksheet: A_n_T(℃)->{new_sheet_name_for_A_n_C}")
-save_df_to_excel(df_list_first_chart_df, output_excel_file, new_sheet_name_for_A_n_C, index_list_first_chart, prompt=wait_4users_prompt) # 输入DataFrame, 输出到Excel文件中的工作表名称, 索引名称列表
-
-# ✅  save graph data for second chart, units: Celsius
-print(f"2st worksheet: A_n_T(℃)->{new_sheet_name_for_A_n_C}")
-save_df_to_excel(df_list_of_second_chart_df, output_excel_file, new_sheet_name_for_R_n_C, index_list_second_chart, prompt=wait_4users_prompt) # 输入DataFrame, 输出到Excel文件中的工作表名称, 索引名称列表
-
-# ✅ save graph data for two charts in one worksheet, units: Kelvin
-df_combined_all_A_R_n_x_ys_df = pd.concat([all_A_n_x_ys_df, all_R_n_x_ys_df], axis=1)
-new_sheet_name_for_df_combined = "K_both_A_R_n_T"
-print(f"3st worksheet: A_n_T(K)+R_n_T(K)->{new_sheet_name_for_df_combined}...")
-save_df_to_excel(df_combined_all_A_R_n_x_ys_df, output_excel_file, new_sheet_name_for_df_combined, index=True, prompt=wait_4users_prompt) # 索引选择True, 会将索引列输出到Excel文件中
-# ----------------------End👆👆👆----------------------
-
+# # ----------------------Export and save data:----------------------
+# # prompt=True, 会在输出Excel文件时，弹出对话框，询问是否覆盖已有文件
+# wait_4users_prompt = True
+# # worksheet 1-2th, C
+# # ✅ save graph data for first chart, units: Celsius
+# print(f"1st worksheet: A_n_T(℃)->{new_sheet_name_for_A_n_C}")
+# save_df_to_excel(df_list_first_chart_df, output_excel_file, new_sheet_name_for_A_n_C, index_list_first_chart, prompt=wait_4users_prompt) # 输入DataFrame, 输出到Excel文件中的工作表名称, 索引名称列表
+#
+# # ✅  save graph data for second chart, units: Celsius
+# print(f"2st worksheet: A_n_T(℃)->{new_sheet_name_for_A_n_C}")
+# save_df_to_excel(df_list_of_second_chart_df, output_excel_file, new_sheet_name_for_R_n_C, index_list_second_chart, prompt=wait_4users_prompt) # 输入DataFrame, 输出到Excel文件中的工作表名称, 索引名称列表
+#
+# # ✅ save graph data for two charts in one worksheet, units: Kelvin
+# df_combined_all_A_R_n_x_ys_df = pd.concat([all_A_n_x_ys_df, all_R_n_x_ys_df], axis=1)
+# new_sheet_name_for_df_combined = "K_both_A_R_n_T"
+# print(f"3st worksheet: A_n_T(K)+R_n_T(K)->{new_sheet_name_for_df_combined}...")
+# save_df_to_excel(df_combined_all_A_R_n_x_ys_df, output_excel_file, new_sheet_name_for_df_combined, index=True, prompt=wait_4users_prompt) # 索引选择True, 会将索引列输出到Excel文件中
+# # ----------------------End👆👆👆----------------------
+#
