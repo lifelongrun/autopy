@@ -51,8 +51,9 @@ def translate_word_file(file_path, target_lang="ZH", output_file="translated_doc
     translated_doc.save(output_file)
 
 # 示例使用1
-text_origin = 'Hi, you know, this work presents a modeling and experimental analysis on the flame length of buoyant turbulent slot diffusion flame!'
-text_translated = translate_text(text_origin, "ZH")
+text_origin = '摄氏度'
+
+text_translated = translate_text(text_origin, "EN-US")
 print(f"text_origin: {text_origin}\n"
       f"text_translated: {text_translated}")
 
