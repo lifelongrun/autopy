@@ -147,28 +147,28 @@ excel_files = [
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日21时45分-ve3.5-eq0.6-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日22时19分-ve4.0-eq0.6-H20-BBS-45-below15mm.xlsx",
 # 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
-    # Hy---ve3.5-eq0.6-H00-100-BBS-45--- ✅
+    # Hy---ve3.5-eq0.6-H00-100-BBS-45--- ✅ 已导出：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日15时40分-ve3.5-eq0.6-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日21时45分-ve3.5-eq0.6-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日16时23分-ve3.5-eq0.6-H40-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日16时58分-ve3.5-eq0.6-H60-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日17时49分-ve3.5-eq0.6-H80-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日18时22分-ve3.5-eq0.6-H100-BBS-45-below15mm.xlsx",
-    # Hy---ve3.5-eq0.8-H00-100-BBS-45--- ✅
+    # Hy---ve3.5-eq0.8-H00-100-BBS-45--- ✅ 已导出：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时42分-ve3.5-eq0.8-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时10分-ve3.5-eq0.8-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日20时37分-ve3.5-eq0.8-H40-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日20时05分-ve3.5-eq0.8-H60-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日19时31分-ve3.5-eq0.8-H80-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日18时55分-ve3.5-eq0.8-H100-BBS-45-below15mm.xlsx",
-    # Hy---ve3.5-eq1.0-H00-100-BBS-45--- ✅
+    # Hy---ve3.5-eq1.0-H00-100-BBS-45--- ✅ 已导出：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时08分-ve3.5-eq1.0-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时39分-ve3.5-eq1.0-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日16时11分-ve3.5-eq1.0-H40-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日16时43分-ve3.5-eq1.0-H60-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日17时14分-ve3.5-eq1.0-H80-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日17时49分-ve3.5-eq1.0-H100-BBS-45-below15mm.xlsx",
-    # Hy---ve3.5-eq1.2-H00-100-BBS-45--- ✅
+    # Hy---ve3.5-eq1.2-H00-100-BBS-45--- ✅ 已导出：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日21时19分-ve3.5-eq1.2-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日20时46分-ve3.5-eq1.2-H20-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日20时14分-ve3.5-eq1.2-H40-BBS-45-below15mm.xlsx",
@@ -176,7 +176,7 @@ excel_files = [
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日18时59分-ve3.5-eq1.2-H80-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日18时21分-ve3.5-eq1.2-H100-BBS-45-blow15mm.xlsx",
 # 不同当量比(eq0.6-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
-    # eq---ve3.5-eq0.6-1.2-H00-BBS-45---✅ 已导出：
+    # eq---ve3.5-eq0.6-1.2-H00-BBS-45---✅ 已导出(1sheet)：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日15时40分-ve3.5-eq0.6-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时06分-ve3.5-eq0.7-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时42分-ve3.5-eq0.8-H00-BBS-45-below15mm.xlsx",
@@ -184,14 +184,14 @@ excel_files = [
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时08分-ve3.5-eq1.0-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时26分-ve3.5-eq1.1-H00-BBS-45-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日21时19分-ve3.5-eq1.2-H00-BBS-45-below15mm.xlsx",
-    # eq---ve3.5-eq0.6-1.2-H20-BBS-45---✅
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日21时45分-ve3.5-eq0.6-H20-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时37分-ve3.5-eq0.7-H20-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时10分-ve3.5-eq0.8-H20-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日15时42分-ve3.5-eq0.9-H20-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时39分-ve3.5-eq1.0-H20-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时58分-ve3.5-eq1.1-H20-BBS-45-below15mm.xlsx",
-        r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日20时46分-ve3.5-eq1.2-H20-BBS-45-below15mm.xlsx",
+    # eq---ve3.5-eq0.6-1.2-H20-BBS-45---✅ 已导出(1sheet)：
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月21日21时45分-ve3.5-eq0.6-H20-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日14时37分-ve3.5-eq0.7-H20-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月22日21时10分-ve3.5-eq0.8-H20-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日15时42分-ve3.5-eq0.9-H20-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日15时39分-ve3.5-eq1.0-H20-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月24日16时58分-ve3.5-eq1.1-H20-BBS-45-below15mm.xlsx",
+    #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-45-below15mm\2023年12月23日20时46分-ve3.5-eq1.2-H20-BBS-45-below15mm.xlsx",
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 # ------File directory format of experiment operation conditions for BBS-55-below15mm👇👇👇------
@@ -204,7 +204,7 @@ excel_files = [
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-55-below15mm\2023年12月18日16时42分-ve3.5-eq0.6-H20-BBS-55-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-55-below15mm\2023年12月18日17时14分-ve4.0-eq0.6-H20-BBS-55-below15mm.xlsx",
 # 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
-    # Hy---ve3.5-eq0.6-H00-100-BBS-55--- ✅
+    # Hy---ve3.5-eq0.6-H00-100-BBS-55--- ✅ 已导出：
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-55-below15mm\2023年12月19日17时49分-ve3.5-eq0.6-H00-BBS-55-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-55-below15mm\2023年12月18日16时42分-ve3.5-eq0.6-H20-BBS-55-below15mm.xlsx",
     #     r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-55-below15mm\2023年12月19日11时32分-ve3.5-eq0.6-H40-BBS-55-below15mm.xlsx",
@@ -319,7 +319,8 @@ excel_files = [
 # ---write to excel---
 # ---将dataframe中的数据写入到Excel文件中---
 # 指定 Excel 文件路径及文件名（无论是否存在）
-output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Data_output_ve3.5-eq0.6-1.2-H20_BBS45-1sheet-kelvin.xlsx"
+short_name = "ve3.5-eq1.2-H00-100-BBS-45"
+output_excel_file = rf"E:\OneDrive\00_To_Do\1.Graduate Paper\Thesis paper\Data_output_{short_name}-1sheet-kelvin.xlsx"
 # 工作表名称前缀，区别摄氏度"℃"/开尔文"K"
 prefix_sheet_name = ["C", "K"]
 new_sheet_name_for_A_n_C = prefix_sheet_name[0] + '_A_n_T'
