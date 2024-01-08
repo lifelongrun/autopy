@@ -51,7 +51,7 @@ def translate_word_file(file_path, target_lang="ZH", output_file="translated_doc
     translated_doc.save(output_file)
 
 # 示例使用1
-text_origin = '摄氏度'
+text_origin = '内置的钝体-旋流结构示意'
 
 text_translated = translate_text(text_origin, "EN-US")
 print(f"text_origin: {text_origin}\n"

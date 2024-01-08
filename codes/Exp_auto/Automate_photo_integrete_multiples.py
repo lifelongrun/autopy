@@ -298,24 +298,21 @@ image_paths = [
 # ------File directory format of experiment operation conditions for BBS-45-below15mm👇👇👇------
 # 不同燃料流速(ve1.5-4.0-eq0.6-H20)，3mm热电偶测温（加6.3mm套管后）
     # ve---ve1.5-4.0-eq0.6-H20-BBS-45---🔴
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve1.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1509-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1530-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1548-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1611-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1642-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve4.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1657-cropped.jpg",
-
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve1.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1509-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1530-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1548-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1611-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1642-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve4.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1657-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve1.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1509-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1530-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve2.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1548-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1611-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1642-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve4.0-eq0.6-H20-BBS-45-photo-below15mm-cropped\Img1657-cropped.jpg",
 # 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
     # Hy---ve3.5-eq0.6-H00-100-BBS-45--- 🔴
+
     # Hy---ve3.5-eq0.8-H00-100-BBS-45--- 🔴
+
     # Hy---ve3.5-eq1.0-H00-100-BBS-45--- 🔴
+
     # Hy---ve3.5-eq1.2-H00-100-BBS-45--- 🔴
+
 # 不同当量比(eq0.6-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
     # eq---ve3.5-eq0.6-1.2-H00-BBS-45---🔴
     # eq---ve3.5-eq0.6-1.2-H20-BBS-45---🔴
@@ -357,25 +354,33 @@ image_paths = [
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 
+r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H100-BBS-45-photo-below15mm-cropped\Img2348-cropped.jpg",
+r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H100-BBS-45-photo-below15mm-cropped\Img2326-cropped.jpg",
+r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H100-BBS-45-photo-below15mm-cropped\Img2296-cropped.jpg",
+r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H100-BBS-45-photo-below15mm-cropped\Img2273-cropped.jpg",
+
+
+
 ]  # 替换为您的图片路径
 print(f"input image quantities: {len(image_paths)} unit: images")
 
 # 设置网格参数
-grid = {'rows': 2,
-        'cols': 6
+grid = {'rows': 1,
+        'cols': 4
         }  # 2行2列, 替换为您的行列数，例如{'rows': 2, 'cols': 2}, 注意这里的行列数要与图片数量匹配(乘积等于图片数量)
 
 # grid['cols'] = len(image_paths) # 若采用一维网格，则无需设定网格参数，则用图片数量替换列数
 
-dire_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data-postprocess\Flame image"  # 替换为您的图片所在文件夹路径
+# dire_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data-postprocess\Flame image"  # 替换为您的图片所在文件夹路径
+dire_path = r"E:\OneDrive\00_To_Do\工作-总-航空发动机-分-氢燃烧扩散特性"  # 替换为您的图片所在文件夹路径
 # 确保输出文件夹存在，如果不存在则创建它
 if not os.path.exists(dire_path):
     os.makedirs(dire_path)
 # 为实验工况命名
 exp_condition_name = {
-"ve": "ve1.5-5.0", # ve for velocity
-"eq": "eq0.6", # eq for equivalence ratio
-"H": "H20", # H for Hydrogen blending ratio
+"ve": "ve3.5", # ve for velocity
+"eq": "eq0.6-1.2", # eq for equivalence ratio
+"H": "H100", # H for Hydrogen blending ratio
 "Struct": "BBS-45" # BB/BBS-x for combustion chamber structure
 }
 
