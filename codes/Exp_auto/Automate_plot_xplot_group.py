@@ -267,16 +267,12 @@ excel_files = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日18时37分-ve4.0-eq0.6-H20-BBS-65-below15mm.xlsx",   # todo here🔴 Re1-径向靠近中心的温度偏低
 # 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
     # Hy---ve3.5-eq0.6-H00-100-BBS-65--- ✅
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日14时22分-ve3.5-eq0.6-H00-BBS-65-redo.xlsx", # todo here🔴 Re1-径向靠近中心的温度偏低
-    r"E:\OneDrive\2024年01月08日18时23分-ve3.5-eq0.6-H00-BSS-65-re.xlsx",   # 重做完成🟢 但是轴向位置为0mm时，径向温度T1(最小方位置的热电偶)测得温度偏高，此时，轴向热电偶使得火焰显胖，导致径向热电偶温度偏高
-
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日19时09分-ve3.5-eq0.6-H20-BBS-65-below15mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日15时39分-ve3.5-eq0.6-H40-BBS-65-below15mm.xlsx",
-    # # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日16时40分-ve3.5-eq0.6-H60-BBS-65-below15mm.xlsx",  # todo 01.08-here🔴 径向靠近中心的温度偏低
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2024年01月08日17时10分-ve3.5-eq0.6-H60-BBS-65-below15mm.xlsx",  # 重做完成🟢
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日17时15分-ve3.5-eq0.6-H80-BBS-65-below15mm.xlsx",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日17时47分-ve3.5-eq0.6-H100-BBS-65-below15mm.xlsx",
-
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日14时22分-ve3.5-eq0.6-H00-BBS-65-redo.xlsx", # 重做完成🟢 已经合并；注意：轴向位置为0mm时，径向温度T1(最小方位置的热电偶)测得温度偏高，此时，轴向热电偶使得火焰显胖，导致径向热电偶温度偏高
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月15日19时09分-ve3.5-eq0.6-H20-BBS-65-below15mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日15时39分-ve3.5-eq0.6-H40-BBS-65-below15mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日16时40分-ve3.5-eq0.6-H60-BBS-65-below15mm.xlsx", # 重做完成🟢 已经合并
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日17时15分-ve3.5-eq0.6-H80-BBS-65-below15mm.xlsx",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日17时47分-ve3.5-eq0.6-H100-BBS-65-below15mm.xlsx",
     # Hy---ve3.5-eq0.8-H00-100-BBS-65--- ✅
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日18时21分-ve3.5-eq0.8-H00-BBS-65-below15mm.xlsx",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Data-BBS-65-Below15mm\2023年12月16日19时25分-ve3.5-eq0.8-H20-BBS-65-below15mm.xlsx",
