@@ -46,6 +46,6 @@ process_flame_image('path_to_your_image.jpg')
 
 
 # 使用示例
-path_to_your_image = r"E:\Github-autopy\codes\Image processing\Img1912-cropped-xxx.jpg"
+path_to_your_image = r"/codes/Image processing/thin_flame.jpg"
 
-# process_flame_image(r"E:\Github-autopy\codes\Image processing\Img1912-cropped-xxx.jpg")
+# process_flame_image(r"E:\Github-autopy\codes\Image processing\thin_flame.jpg")
