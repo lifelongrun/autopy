@@ -4,11 +4,13 @@ import numpy as np
 # 指定使用的字体，例如 SimHei 是一个包含中文字符的字体
 plt.rcParams['font.sans-serif'] = ['SimHei']
 # 载入图片
-image_path = "E:\Github-autopy\codes\Image processing\swirl_flame.jpg"
+# image_path = "E:\Github-autopy\codes\Image processing\swirl_flame.jpg"
 # image_path = "E:\Github-autopy\codes\Image processing\pure_h2.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\night.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\flame-test.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\Img1660-cropped.jpg"
+# image_path = r"E:\Github-autopy\codes\Image processing\more_blue.jpg"
+image_path = r"E:\Github-autopy\codes\Image processing\Img1660-cropped.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\Img1657-cropped.jpg"
 image = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
@@ -22,7 +24,7 @@ plt.imshow(sharpened_image)
 plt.title("锐化后的图片")
 # plt.show()
 # 中值滤波
-median_blur = cv2.medianBlur(sharpened_image, 7)
+median_blur = cv2.medianBlur(sharpened_image, 13)
 median_blur_gray = cv2.cvtColor(median_blur, cv2.COLOR_BGR2GRAY)
 # 高斯处理
 gaussian_blur = cv2.GaussianBlur(median_blur, (11, 11), 0)
@@ -37,7 +39,7 @@ plt.title("OTSU算法(中值模糊后+高斯模糊后)")
 plt.show()
 
 # --new
-th3 = cv2.adaptiveThreshold(median_blur_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY,11,2)
+th3 = cv2.adaptiveThreshold(median_blur_gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,11,2)
 # plt.imshow(th3, "gray")
 # plt.title("自适应: median模糊+高斯自适应")
 # plt.show()
@@ -67,7 +69,7 @@ for i in range(6):
     plt.title(titles[i])
     plt.axis('on')
     plt.xticks([]),plt.yticks([])
-plt.show()
+# plt.show()
 # --边缘检测
 # 使用Canny边缘检测
 edges = cv2.Canny(th4, threshold1=10, threshold2=200)  # 调整阈值根据图像的特性
@@ -82,11 +84,11 @@ edges = cv2.Canny(th4, threshold1=10, threshold2=200)  # 调整阈值根据图�
 # --end
 
 OTSU_after_adaptive = cv2.threshold(th4, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
-plt.imshow(th4, cmap='gray')
+plt.imshow(th3, cmap='gray')
 plt.show()
 # 转为numpy格式储存像素信息
 # numpy_array = np.array(binary_image) # OTSU算法
-numpy_array = np.array(OTSU_after_adaptive) # 自适应高斯
+numpy_array = np.array(binary_image) # 自适应高斯
 
 
 # 寻找火焰最顶部的像素
@@ -114,7 +116,7 @@ if non_zero_rows.any():
     cv2.line(marked_image, (0, top_row), (marked_image.shape[1], top_row), (0, 255, 0), 2)
 
     # 保存标记后的图片
-    marked_image_path = 'Image-marked-5.jpg'
+    marked_image_path = 'Image-marker-01-11.jpg'
     cv2.imwrite(marked_image_path, marked_image)
 else:
     print("Unable to find the flame in the image.")
