@@ -1,4 +1,6 @@
 import cv2
+import matplotlib.pyplot as plt
+
 
 def process_flame_image(image_path):
     # 读取图像
@@ -34,18 +36,21 @@ def process_flame_image(image_path):
 
     # 应用Canny边缘检测
     edges = cv2.Canny(combined_mask, 100, 200)
-
+    plt.imshow(edges, cmap='gray')
+    plt.title("Canny detection")
+    plt.axis('on')
+    plt.show()
     # 显示结果
-    cv2.imshow('Edges', edges)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+    # cv2.imshow('Edges', edges)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
 
 # 使用示例
-process_flame_image('path_to_your_image.jpg')
+# process_flame_image('path_to_your_image.jpg')
 
 
 
 # 使用示例
 path_to_your_image = r"/codes/Image processing/thin_flame.jpg"
 
-# process_flame_image(r"E:\Github-autopy\codes\Image processing\thin_flame.jpg")
+process_flame_image(r"E:\Github-autopy\codes\Image processing\thin_flame.jpg")
