@@ -38,10 +38,9 @@ def process_flame_image(image_path):
 
     return binary_image
 
-def find_fire_height(binary_image_path, image_height_mm=500):
+def find_fire_height(binary_image , binary_image_path, image_height_mm=500):
+    # 传入参数: 二值化图像, 图像路径, 图像的实际高度（毫米）
     # 加载已经处理过的二值化图像
-    # binary_image = cv2.imread(binary_image_path, cv2.IMREAD_GRAYSCALE)
-    binary_image = binary_image_path
 
     if binary_image is None:
         raise ValueError("Error: Binary image not found.")
@@ -61,8 +60,12 @@ def find_fire_height(binary_image_path, image_height_mm=500):
         # plt.axis('on')
         # plt.show()
         # cv2.imwrite(marked_image_path, marked_image)
-        image_name = os.path.basename(binary_image_path)
-        marked_image_path = os.path.join(folder_path, "marked")
+        # folder_path = os.path.dirname(binary_image_path)
+        image_basename = os.path.basename(binary_image_path)
+
+        # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\two images'
+
+        marked_image_path = os.path.join(image_basename, "marked", binary_image_path.replace(".jpg", "-marked.jpg")) # 保存标记后的.jpg格式图像
         cv2.imwrite(marked_image_path, marked_image)
 
     else:
@@ -101,21 +104,29 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
         index = os.path.basename(jpg_file)
 
         if binary_image is not None:
-            flame_height_mm, marked_image = find_fire_height(binary_image, image_height_mm) # 调用函数:计算火焰高度
+            flame_height_mm, marked_image = find_fire_height(binary_image, jpg_file, image_height_mm) # 调用函数:计算火焰高度
 
             if flame_height_mm is not None:
                 df_flame_height = pd.concat([df_flame_height, pd.DataFrame({'Flame Height (mm)': [flame_height_mm]})], ignore_index=False)
                 df_flame_height = df_flame_height.reset_index(drop=True)  # 重置索引并丢弃之前的索引
                 print(f"图像:{jpg_file}, 火焰高度: {flame_height_mm}mm")
+    # 打印 DataFrame(火焰高度)
+    print(df_flame_height, index)
     # 计算均值和标准差
     mean_height = df_flame_height['Flame Height (mm)'].mean()
     std_deviation = df_flame_height['Flame Height (mm)'].std()
     # print(f"均值: {mean_height}mm, 标准差: {std_deviation}mm")
-    print(df_flame_height)
+    # 创建一个新的 DataFrame 来存储统计数据
+    stats_df = pd.DataFrame({'Flame Height (mm)': ['Mean', 'Standard Deviation'], 'Value': [mean_height, std_deviation]})
+
+    # 将统计数据的 DataFrame 连接到原始 DataFrame 的底部
+    df_combined = pd.concat([df_flame_height, stats_df], ignore_index=True)
+    write_path = os.path.join(folder_path, "flame-height.csv")
+    df_combined.to_csv(write_path, index=True, encoding='utf_8_sig')
     return mean_height, std_deviation
 
 # 调用函数并传入文件夹路径
 # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\ve2.0-eq0.6-H20-BB-photo-cropped-copy'
-folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\two images'
+folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\test-ve1.5-eq0.6-H20-BBS-45-photo-below15mm-cropped'
 mean_height, std_deviation = process_folder_and_get_statistics(folder_path)
 print(f"均值: {mean_height}; 标准差: {std_deviation}")
