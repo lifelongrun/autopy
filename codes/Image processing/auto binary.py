@@ -95,23 +95,24 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
     #   - 均值和标准差的元组 (mean_height, std_deviation)
     # 获取.jpg文件列表
     jpg_files = [os.path.join(folder_path, filename) for filename in os.listdir(folder_path) if filename.endswith('.jpg')]
-    # 创建一个空的DataFrame来存储火焰高度
-    data = {'Flame Height (mm)': []}
-    df_flame_height = pd.DataFrame(data)
+    # 先收集创建dataframe所需的数据，然后再一次性赋值给DataFrame
+    flame_heights = [] # 用于储存火焰高度
+    indexes = [] # 用于储存对应的图像文件名
     # 遍历.jpg文件并获取火焰高度，然后将其添加到DataFrame中
     for jpg_file in jpg_files:
         binary_image = process_flame_image(jpg_file) # 调用函数:处理图像, 返回二值化图像
-        index = os.path.basename(jpg_file)
 
         if binary_image is not None:
             flame_height_mm, marked_image = find_fire_height(binary_image, jpg_file, image_height_mm) # 调用函数:计算火焰高度
 
             if flame_height_mm is not None:
-                df_flame_height = pd.concat([df_flame_height, pd.DataFrame({'Flame Height (mm)': [flame_height_mm]})], ignore_index=False)
-                df_flame_height = df_flame_height.reset_index(drop=True)  # 重置索引并丢弃之前的索引
-                print(f"图像:{jpg_file}, 火焰高度: {flame_height_mm}mm")
-    # 打印 DataFrame(火焰高度)
-    print(df_flame_height, index)
+                index = os.path.basename(jpg_file)
+                indexes.append(index)
+                flame_heights.append(flame_height_mm)
+                # print(f"图像:{index}, 火焰高度: {flame_height_mm}mm")
+    # 循环结束后，一次性创建 DataFrame
+    df_flame_height = pd.DataFrame({'Flame Height (mm)': flame_heights}, index=indexes)
+
     # 计算均值和标准差
     mean_height = df_flame_height['Flame Height (mm)'].mean()
     std_deviation = df_flame_height['Flame Height (mm)'].std()
@@ -120,13 +121,14 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
     stats_df = pd.DataFrame({'Flame Height (mm)': ['Mean', 'Standard Deviation'], 'Value': [mean_height, std_deviation]})
 
     # 将统计数据的 DataFrame 连接到原始 DataFrame 的底部
-    df_combined = pd.concat([df_flame_height, stats_df], ignore_index=True)
+    df_combined = pd.concat([df_flame_height, stats_df], ignore_index=False)
     write_path = os.path.join(folder_path, "flame-height.csv")
     df_combined.to_csv(write_path, index=True, encoding='utf_8_sig')
+    print(df_combined)
     return mean_height, std_deviation
 
 # 调用函数并传入文件夹路径
 # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\ve2.0-eq0.6-H20-BB-photo-cropped-copy'
-folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\test-ve1.5-eq0.6-H20-BBS-45-photo-below15mm-cropped'
+folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-65-Below15mm\ve3.5-eq0.9-H00-BBS-65-photo-below15mm-cropped'
 mean_height, std_deviation = process_folder_and_get_statistics(folder_path)
-print(f"均值: {mean_height}; 标准差: {std_deviation}")
+# print(f"均值: {mean_height}; 标准差: {std_deviation}")
