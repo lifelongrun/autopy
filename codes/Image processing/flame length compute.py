@@ -51,15 +51,13 @@ plt.rcParams['font.sans-serif'] = ['SimHei']
 # 载入图片
 # image_path = "E:\Github-autopy\codes\Image processing\swirl_flame.jpg"
 # image_path = "E:\Github-autopy\codes\Image processing\pure_h2.jpg"
-
-
 # image_path = r"E:\Github-autopy\codes\Image processing\Img1660-cropped.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\more_blue.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\Img1660-cropped.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\Img1657-cropped.jpg"
 # image_path = r"E:\Github-autopy\codes\Image processing\thin_film.jpg"
-# image_path = r"E:\Github-autopy\codes\Image processing\thin_blue_tail.jpg"
-image_path = r"E:\Github-autopy\codes\Image processing\Img1656-cropped.jpg"
+image_path = r"E:\Github-autopy\codes\Image processing\thin_blue_tail.jpg"
+# image_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H00-BB-photo-cropped\Img913-cropped.jpg"
 # image = cv2.imread(image_path, cv2.IMREAD_COLOR)
 image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
 origin_image = image
@@ -76,32 +74,34 @@ print(f"Ksize: {ksize}")
 sharpening_kernel = np.array([[-1, -1, -1],
                               [-1, ksize/2, -1],
                               [-1, -1, -1]])
-image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
+# image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
 sharpened_image = image
 
-
+print(image.shape)
 image = cv2.medianBlur(image, ksize)
 # median_blur_gray = cv2.cvtColor(median_blur, cv2.COLOR_BGR2GRAY)  # 转换为灰度图像
 
+image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
 
+image = cv2.medianBlur(image, ksize)
 
 # 高斯处理
-gaussian_blur = cv2.GaussianBlur(image, (ksize, ksize), 1) #sigmaX=0,sigmaY=0，表示从ksize计算, sigma越大，图像越模糊
+gaussian_blur = cv2.GaussianBlur(image, (ksize, ksize), 0.5) #sigmaX=0,sigmaY=0，表示从ksize计算, sigma越大，图像越模糊
 # gaussian_blur_gray = cv2.cvtColor(gaussian_blur, cv2.COLOR_BGR2GRAY) # 转换为灰度图像
 # --一级预处理结束
 median_blur = gaussian_blur
 # 全局threshold
-thg = cv2.threshold(median_blur,20,255, cv2.THRESH_BINARY)[1]
+thg = cv2.threshold(median_blur,50,255, cv2.THRESH_BINARY)[1]
 
 # 应用二值化:OTSU算法
-_, binary_image = cv2.threshold(origin_image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+_, binary_image = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 #
 plt.imshow(binary_image, "gray")
 plt.title("OTSU算法(中值模糊后+高斯模糊后)")
 plt.show()
 
 # 应用二值化:blur-M+Adap-G
-th3 = cv2.adaptiveThreshold(median_blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,7,2)
+th3 = cv2.adaptiveThreshold(median_blur,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,17,2)
 # plt.imshow(th3, "gray")
 # plt.title("自适应: median模糊+高斯自适应")
 # plt.show()

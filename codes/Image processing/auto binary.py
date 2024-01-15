@@ -16,17 +16,18 @@ def process_flame_image(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     # 预处理A: 锐化图片
     height, width = image.shape[:2] # 获取图像的尺寸
-    ksize = int(min(height, width) * 0.05) # 根据图像尺寸计算锐化核的大小
+    ksize = int(min(height, width) * 0.02) # 根据图像尺寸计算锐化核的大小
     if ksize % 2 == 0:
         ksize += 1
     print(f"Ksize: {ksize}")
+    print(f"Image shape: {image.shape}")
     # 定义一个锐化的核
     sharpening_kernel = np.array([[-1, -1, -1],
                                   [-1, ksize/2, -1],
                                   [-1, -1, -1]])
-    image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
+    # image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
     # sharpened_image = image # 用于显示的锐化后的图像
-    image_median_blur = cv2.medianBlur(image, ksize)
+    image_median_blur = cv2.medianBlur(image, 13) # 这里的窗口大小mXm要为奇数
     # 高斯处理
     # gaussian_blur = cv2.GaussianBlur(image, (ksize, ksize), 1)  #sigmaX=0,sigmaY=0，表示从ksize计算, sigma越大，图像越模糊
     # 应用二值化:OTSU算法
@@ -60,12 +61,19 @@ def find_fire_height(binary_image , binary_image_path, image_height_mm=500):
         # plt.axis('on')
         # plt.show()
         # cv2.imwrite(marked_image_path, marked_image)
-        # folder_path = os.path.dirname(binary_image_path)
-        image_basename = os.path.basename(binary_image_path)
 
-        # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\two images'
+        # 原图片名称
+        original_image_basename = os.path.basename(binary_image_path)
+        # 标记后的图片名称
+        marked_image_basename = original_image_basename.replace(".jpg", "-marked.jpg")
 
-        marked_image_path = os.path.join(image_basename, "marked", binary_image_path.replace(".jpg", "-marked.jpg")) # 保存标记后的.jpg格式图像
+        image_basename = os.path.dirname(binary_image_path)
+
+        # os.path.join 仅用于生成路径字符串，并不涉及文件系统的实际操作。
+        marked_image_path = os.path.join(image_basename, marked_image_basename) # 保存标记后的.jpg格式图像
+        # 检查目录是否存在，如果不存在，则创建它
+        if not os.path.exists(os.path.dirname(marked_image_path)):
+            os.makedirs(os.path.dirname(marked_image_path))
         cv2.imwrite(marked_image_path, marked_image)
 
     else:
@@ -123,12 +131,18 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
     # 将统计数据的 DataFrame 连接到原始 DataFrame 的底部
     df_combined = pd.concat([df_flame_height, stats_df], ignore_index=False)
     write_path = os.path.join(folder_path, "flame-height.csv")
+
+    # 检查目录是否存在，如果不存在，则创建它
+    if not os.path.exists(os.path.dirname(write_path)):
+        os.makedirs(os.path.dirname(write_path))
+
     df_combined.to_csv(write_path, index=True, encoding='utf_8_sig')
     print(df_combined)
     return mean_height, std_deviation
 
 # 调用函数并传入文件夹路径
 # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\ve2.0-eq0.6-H20-BB-photo-cropped-copy'
-folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-65-Below15mm\ve3.5-eq0.9-H00-BBS-65-photo-below15mm-cropped'
+# folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H00-BB-photo-cropped'
+folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.8-H00-BB-photo-cropped'
 mean_height, std_deviation = process_folder_and_get_statistics(folder_path)
 # print(f"均值: {mean_height}; 标准差: {std_deviation}")
