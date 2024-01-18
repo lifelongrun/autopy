@@ -42,14 +42,14 @@ image_paths = [
 # - ve1.5-5.0-eq0.6-H00/20-BB-photo-cropped
 
     # -- ve1.5-5.0-eq0.6-H00-BB-photo-cropped✅(#todo selective ones need to adjust)
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H00-BB-photo-cropped\ve1.5-eq0.6-H00-BB-02-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H00-BB-photo-cropped\Img027-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.5-eq0.6-H00-BB-photo-cropped\Img033-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.0-eq0.6-H00-BB-photo-cropped\Img046-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H00-BB-photo-cropped\Img052-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.0-eq0.6-H00-BB-photo-cropped\Img068-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.5-eq0.6-H00-BB-photo-cropped\Img075-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H00-BB-photo-cropped\Img094-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H00-BB-photo-cropped\ve1.5-eq0.6-H00-BB-02-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H00-BB-photo-cropped\Img027-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.5-eq0.6-H00-BB-photo-cropped\Img033-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.0-eq0.6-H00-BB-photo-cropped\Img046-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H00-BB-photo-cropped\Img052-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.0-eq0.6-H00-BB-photo-cropped\Img068-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.5-eq0.6-H00-BB-photo-cropped\Img075-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H00-BB-photo-cropped\Img094-cropped.jpg",
     # -- ve1.5-5.0-eq0.6-H20-BB-photo-cropped✅(#todo selective ones need to adjust)
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H20-BB-photo-cropped\Img1139-cropped.jpg",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H20-BB-photo-cropped\Img1115-cropped.jpg",
@@ -354,10 +354,11 @@ image_paths = [
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H100-BBS-45-photo-below15mm-cropped\Img2348-cropped.jpg",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H100-BBS-45-photo-below15mm-cropped\Img2326-cropped.jpg",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H100-BBS-45-photo-below15mm-cropped\Img2296-cropped.jpg",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H100-BBS-45-photo-below15mm-cropped\Img2273-cropped.jpg",
+# 纯氢
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.6-H100-BBS-45-photo-below15mm-cropped\Img2348-cropped.jpg",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq0.8-H100-BBS-45-photo-below15mm-cropped\Img2326-cropped.jpg",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.0-H100-BBS-45-photo-below15mm-cropped\Img2296-cropped.jpg",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-45-Below15mm\ve3.5-eq1.2-H100-BBS-45-photo-below15mm-cropped\Img2273-cropped.jpg",
 
 
 
@@ -369,23 +370,23 @@ grid = {'rows': 1,
         'cols': 4
         }  # 2行2列, 替换为您的行列数，例如{'rows': 2, 'cols': 2}, 注意这里的行列数要与图片数量匹配(乘积等于图片数量)
 
-# grid['cols'] = len(image_paths) # 若采用一维网格，则无需设定网格参数，则用图片数量替换列数
+grid['cols'] = len(image_paths) # 若采用一维网格，则无需设定网格参数，则用图片数量替换列数
 
 # dire_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data-postprocess\Flame image"  # 替换为您的图片所在文件夹路径
-dire_path = r"E:\OneDrive\00_To_Do\工作-总-航空发动机-分-氢燃烧扩散特性"  # 替换为您的图片所在文件夹路径
+dire_path = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Thesis Graph\Ch_3_graph"  # 替换为您的图片所在文件夹路径
 # 确保输出文件夹存在，如果不存在则创建它
 if not os.path.exists(dire_path):
     os.makedirs(dire_path)
 # 为实验工况命名
 exp_condition_name = {
-"ve": "ve3.5", # ve for velocity
-"eq": "eq0.6-1.2", # eq for equivalence ratio
-"H": "H100", # H for Hydrogen blending ratio
-"Struct": "BBS-45" # BB/BBS-x for combustion chamber structure
+"ve": "ve1.5-5.0", # ve for velocity
+"eq": "eq0.6", # eq for equivalence ratio
+"H": "H00", # H for Hydrogen blending ratio
+"Struct": "BB" # BB/BBS-x for combustion chamber structure
 }
 
 # 使用os.path.join来拼接路径
-output_path = os.path.join(dire_path, f"integration_flame+r{grid['rows']}-c{grid['cols']}-{exp_condition_name['ve']}-{exp_condition_name['eq']}-{exp_condition_name['H']}-{exp_condition_name['Struct']}.png") # 替换为输出图片的路径, 注意这里的图片命名修改为你想要的名字
+output_path = os.path.join(dire_path, f"integrated_flame+r{grid['rows']}-c{grid['cols']}-{exp_condition_name['ve']}-{exp_condition_name['eq']}-{exp_condition_name['H']}-{exp_condition_name['Struct']}.png") # 替换为输出图片的路径, 注意这里的图片命名修改为你想要的名字
 print(f"output image matrix [Row*Column]: {grid['rows']}*{grid['cols']}")
 print(f"output image path: {output_path}")
 
