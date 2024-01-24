@@ -41,24 +41,24 @@ image_paths = [
 # -----------------------------------------------BB-----------------------------------------------------------------
 # - ve1.5-5.0-eq0.6-H00/20-BB-photo-cropped
 
-    # -- ve1.5-5.0-eq0.6-H00-BB-photo-cropped✅(#todo selective ones need to adjust)
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H00-BB-photo-cropped\ve1.5-eq0.6-H00-BB-02-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H00-BB-photo-cropped\Img027-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.5-eq0.6-H00-BB-photo-cropped\Img033-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.0-eq0.6-H00-BB-photo-cropped\Img046-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H00-BB-photo-cropped\Img052-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.0-eq0.6-H00-BB-photo-cropped\Img068-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.5-eq0.6-H00-BB-photo-cropped\Img075-cropped.jpg",
-    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H00-BB-photo-cropped\Img094-cropped.jpg",
-    # -- ve1.5-5.0-eq0.6-H20-BB-photo-cropped✅(#todo selective ones need to adjust)
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H20-BB-photo-cropped\Img1139-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H20-BB-photo-cropped\Img1115-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.5-eq0.6-H20-BB-photo-cropped\Img1092-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.0-eq0.6-H20-BB-photo-cropped\Img1073-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H20-BB-photo-cropped\Img732-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.0-eq0.6-H20-BB-photo-cropped\Img1155-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.5-eq0.6-H20-BB-photo-cropped\Img1185-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H20-BB-photo-cropped\Img1202-cropped.jpg",
+    # -- ve1.5-5.0-eq0.6-H00-BB-photo-cropped✅(date:24.01.18)
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H00-BB-photo-cropped\ve1.5-eq0.6-H00-BB-02-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H00-BB-photo-cropped\Img027-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.5-eq0.6-H00-BB-photo-cropped\Img033-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.0-eq0.6-H00-BB-photo-cropped\Img046-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H00-BB-photo-cropped\Img052-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.0-eq0.6-H00-BB-photo-cropped\Img068-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.5-eq0.6-H00-BB-photo-cropped\Img075-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H00-BB-photo-cropped\Img094-cropped.jpg",
+    # -- ve1.5-5.0-eq0.6-H20-BB-photo-cropped✅(date:24.01.19)
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve1.5-eq0.6-H20-BB-photo-cropped\Img1142-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.0-eq0.6-H20-BB-photo-cropped\Img1127-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve2.5-eq0.6-H20-BB-photo-cropped\Img1105-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.0-eq0.6-H20-BB-photo-cropped\Img1086-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H20-BB-photo-cropped\Img728-cropped.jpg",
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.0-eq0.6-H20-BB-photo-cropped\Img1154-cropped.jpg", #裁剪不合适
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve4.5-eq0.6-H20-BB-photo-cropped\Img1191-cropped.jpg", #裁剪不合适
+    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H20-BB-photo-cropped\Img1196-cropped.jpg", #裁剪不合适
 # - ve3.5-eq0.6/eq0.8/eq1.0/eq1.2-H00-100-BB-photo-cropped
     # folder name:[ve3.5-eq0.6-Hxx-BB-photo-cropped]
     # -- ve3.5-eq0.6-H00-100-BB-photo-cropped✅(#todo selective ones need to adjust)
@@ -101,15 +101,15 @@ image_paths = [
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.1-H00-BB-photo-cropped\Img868-cropped.jpg",
     # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.2-H00-BB-photo-cropped\Img848-cropped.jpg",
     # -- ve3.5-eq0.4-1.2-H20-BB-photo-cropped✅(#todo selective ones need to adjust)
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.4-H20-BB-photo-cropped\Img970-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.5-H20-BB-photo-cropped\Img995-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H20-BB-photo-cropped\Img732-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H20-BB-photo-cropped\Img1015-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.8-H20-BB-photo-cropped\Img749-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.9-H20-BB-photo-cropped\Img1034-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.0-H20-BB-photo-cropped\Img770-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.1-H20-BB-photo-cropped\Img1069-cropped.jpg",
-    # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.2-H20-BB-photo-cropped\Img793-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.4-H20-BB-photo-cropped\Img970-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.5-H20-BB-photo-cropped\Img995-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.6-H20-BB-photo-cropped\Img732-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H20-BB-photo-cropped\Img1015-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.8-H20-BB-photo-cropped\Img749-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.9-H20-BB-photo-cropped\Img1034-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.0-H20-BB-photo-cropped\Img770-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.1-H20-BB-photo-cropped\Img1069-cropped.jpg",
+    r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.2-H20-BB-photo-cropped\Img793-cropped.jpg",
     # -----------------------------------------------BBS-45-----------------------------------------------------------------
 # - ve1.5-5.0-eq0.6-H00/20-BBS-45-photo-cropped
     # -- ve1.5-5.0-eq0.6-H00-BBS-45-photo-cropped✅(#todo selective ones need to adjust)
@@ -379,9 +379,9 @@ if not os.path.exists(dire_path):
     os.makedirs(dire_path)
 # 为实验工况命名
 exp_condition_name = {
-"ve": "ve1.5-5.0", # ve for velocity
-"eq": "eq0.6", # eq for equivalence ratio
-"H": "H00", # H for Hydrogen blending ratio
+"ve": "ve3.5", # ve for velocity
+"eq": "eq0.4-1.2", # eq for equivalence ratio
+"H": "H20", # H for Hydrogen blending ratio
 "Struct": "BB" # BB/BBS-x for combustion chamber structure
 }
 

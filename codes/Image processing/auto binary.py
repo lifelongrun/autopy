@@ -28,6 +28,7 @@ def process_flame_image(image_path):
     # image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
     # sharpened_image = image # 用于显示的锐化后的图像
     image_median_blur = cv2.medianBlur(image, 13) # 这里的窗口大小mXm要为奇数
+    print(f"median blur kernel size: {13}")
     # 高斯处理
     # gaussian_blur = cv2.GaussianBlur(image, (ksize, ksize), 1)  #sigmaX=0,sigmaY=0，表示从ksize计算, sigma越大，图像越模糊
     # 应用二值化:OTSU算法
@@ -143,6 +144,6 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
 # 调用函数并传入文件夹路径
 # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\ve2.0-eq0.6-H20-BB-photo-cropped-copy'
 # folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H00-BB-photo-cropped'
-folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve5.0-eq0.6-H00-BB-photo-cropped'
+folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.2-H20-BB-photo-cropped'
 mean_height, std_deviation = process_folder_and_get_statistics(folder_path)
 # print(f"均值: {mean_height}; 标准差: {std_deviation}")
