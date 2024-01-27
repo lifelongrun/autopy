@@ -16,7 +16,7 @@ def process_flame_image(image_path):
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
     # 预处理A: 锐化图片
     height, width = image.shape[:2] # 获取图像的尺寸
-    ksize = int(min(height, width) * 0.02) # 根据图像尺寸计算锐化核的大小
+    ksize = int(min(height, width) * 0.03) # 根据图像尺寸计算锐化核的大小
     if ksize % 2 == 0:
         ksize += 1
     print(f"Ksize: {ksize}")
@@ -25,9 +25,12 @@ def process_flame_image(image_path):
     sharpening_kernel = np.array([[-1, -1, -1],
                                   [-1, ksize/2, -1],
                                   [-1, -1, -1]])
-    # image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
+    image = cv2.filter2D(image, -1, sharpening_kernel) #深度为-1，表示输出图像与原图像有相同的深度
+    # show
+    plt.imshow(image)
+    plt.show()
     # sharpened_image = image # 用于显示的锐化后的图像
-    image_median_blur = cv2.medianBlur(image, 13) # 这里的窗口大小mXm要为奇数
+    image_median_blur = cv2.medianBlur(image, 17) # 这里的窗口大小mXm要为奇数
     print(f"median blur kernel size: {13}")
     # 高斯处理
     # gaussian_blur = cv2.GaussianBlur(image, (ksize, ksize), 1)  #sigmaX=0,sigmaY=0，表示从ksize计算, sigma越大，图像越模糊
@@ -144,6 +147,6 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
 # 调用函数并传入文件夹路径
 # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\ve2.0-eq0.6-H20-BB-photo-cropped-copy'
 # folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H00-BB-photo-cropped'
-folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq1.2-H20-BB-photo-cropped'
+folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H00-BBS-55-photo-below15mm-cropped'
 mean_height, std_deviation = process_folder_and_get_statistics(folder_path)
 # print(f"均值: {mean_height}; 标准差: {std_deviation}")
