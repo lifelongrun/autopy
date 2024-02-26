@@ -147,6 +147,6 @@ def process_folder_and_get_statistics(folder_path, image_height_mm=500):
 # 调用函数并传入文件夹路径
 # folder_path = r'E:\OneDrive\00_To_Do\Image proccessing\ve2.0-eq0.6-H20-BB-photo-cropped-copy'
 # folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BB\ve3.5-eq0.7-H00-BB-photo-cropped'
-folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-55-Below15mm\ve3.5-eq1.2-H00-BBS-55-photo-below15mm-cropped'
+folder_path = r'E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Photo-BBS-65-Below15mm\ve3.5-eq0.6-H20-BBS-65-photo-below15mm-cropped'
 mean_height, std_deviation = process_folder_and_get_statistics(folder_path)
 # print(f"均值: {mean_height}; 标准差: {std_deviation}")
