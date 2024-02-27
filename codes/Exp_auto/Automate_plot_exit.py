@@ -15,7 +15,8 @@ def process_excel_file(file, columns, num_rows):
     df = pd.read_excel(file, sheet_name='testo', usecols=columns)
     last_rows = df.tail(num_rows)
     #返回平均值与标准差
-    return last_rows.mean(), last_rows.std()
+    return last_rows.mean()
+# , last_rows.std()
 
 # Excel文件和列名，报错的话注意r及逗号分隔符
 excel_files = [
@@ -60,51 +61,57 @@ excel_files = [
 # 不同当量比(eq0.4-1.2-H20): 3mm热电偶测温（加6.3mm套管后）
     # eq---ve3.5-eq0.4-1.2-H20-BB---✅
 # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.4-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.4-ve3.5-H20-BB-exit-new.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.5-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.6-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.5-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.6-ve3.5-H20-BB-exit.xlsx",
 # r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.7-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.7-ve3.5-H20-BB-exit-new.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.8-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.9-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq1.0-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq1.1-ve3.5-H20-BB-exit.xlsx",
-r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq1.2-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.8-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq0.9-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq1.0-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq1.1-ve3.5-H20-BB-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\2024-02-26-eq1.2-ve3.5-H20-BB-exit.xlsx",
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 
     # ...✅/❎/🟢/🔴/🕝➡️/👀
-# ------File directory format of experiment operation conditions for BB/BBS-55-below15mm👇👇👇------
+# ------File directory format of experiment operation conditions for BBS-55-below15mm👇👇👇------
 # 不同燃料流速(ve1.5-3.5-eq0.6-H20)，3mm热电偶测温（加6.3mm套管后
-    # ve---ve1.5-3.5-eq0.6-H20-BBS-45---✅
+    # ve---ve1.5-3.5-eq0.6-H20-BBS-55---✅
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve1.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve2.0-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve2.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.0-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H20-BBS-55-exit.xlsx",
 
 # 不同掺氢比(eq0.6-H00-100): 3mm热电偶测温（加6.3mm套管后）
-    # Hy---ve3.5-eq0.6-H00-100-BBS-45--- ✅
-
+    # Hy---ve3.5-eq0.6-H00-100-BBS-55--- ✅
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H00-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H40-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H60-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H80-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H100-BBS-55-exit.xlsx",
 # 不同当量比(eq0.6-1.2-H20): 3mm热电偶测温（加6.3mm套管后）
-    # eq---ve3.5-eq0.6-1.2-H20-BBS-45---✅
-
+    # eq---ve3.5-eq0.6-1.2-H20-BBS-55---✅
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.6-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.7-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.8-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq0.9-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq1.0-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq1.1-ve3.5-H20-BBS-55-exit.xlsx",
+# r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\Supplement-BBS-55-Exit\2024-02-27-eq1.2-ve3.5-H20-BBS-55-exit.xlsx",
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
 
     # ...✅/❎/🟢/🔴/🕝➡️/👀
 # ------File directory format of experiment operation conditions for BBS-45&65-below15mm👇👇👇------
 # 不同燃料流速(ve1.5-4.0-eq0.6-H00/H20)，3mm热电偶测温（加6.3mm套管后）
-    # ve---ve1.5-4.0-eq0.6-H20-BBS-55---✅
+    # ve---ve1.5-4.0-eq0.6-H20-BBS-45&65---✅
 
 # 不同掺氢比(eq0.6/eq0.8/eq1.0/eq1.2-H00-100): 3mm热电偶测温（加6.3mm套管后）
-    # Hy---ve3.5-eq0.6-H00-100-BBS-55---✅
-
-    # Hy---ve3.5-eq0.8-H00-100-BBS-55---✅
-
-    # Hy---ve3.5-eq1.0-H00-100-BBS-55---✅
-
-    # Hy---ve3.5-eq1.2-H00-100-BBS-55---✅
+    # Hy---ve3.5-eq0.6-H00-100-BBS-45&65---✅
 
 # 不同当量比(eq0.6-1.2-H00/H20): 3mm热电偶测温（加6.3mm套管后）
-    # eq---ve3.5-eq0.6-1.2-H00-BBS-55---✅
-
-    # eq---ve3.5-eq0.6-1.2-H20-BBS-55---✅
+    # eq---ve3.5-eq0.6-1.2-H20-BBS-45&65---✅
 
 # ----------------------------------------------------------------------------------------End👆👆👆------
 
@@ -195,7 +202,7 @@ print(average_df)
 # ---将dataframe中的数据写入到Excel文件中---
 if "y" == input("是否将表中数据（烟气数据）输出为Excel文件？[y/n]"):
     # 指定 Excel 文件路径及文件名（无论是否存在）
-    output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\exit-sup-ve3.5-eq0.6-H00-100-BB.xlsx" # 替换为实际文件名
+    output_excel_file = r"E:\OneDrive\00_To_Do\1.Graduate Paper\Data\supplement-BB-Exit\exit-sup-ve3.5-eq0.4-1.2-H20-BB-std.xlsx" # 替换为实际文件名
     new_sheet_name = 'vexx-eqxx-Hxx' # 每次运行前，修改这里的工作表名称
     # 将数据写入到 Excel 文件的指定工作表中
     # average_df.to_excel(output_excel_file, sheet_name=new_sheet_name, index=True)
