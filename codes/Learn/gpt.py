@@ -1,15 +1,25 @@
-from openai import OpenAI
-client = OpenAI(api_key='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')
+import re
+from pytube import YouTube
+import moviepy.editor as mp
 
-completion = client.chat.completions.create(
-  model="gpt-3.5-turbo",
-  messages=[
-    {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex English language concepts with creative flair."},
-    {"role": "user", "content": "Explain what is the hardest part for ESL when preparing in TOEFL test."}
-  ]
-)
+# 阶段1：音频提取
+# YouTube视频的URL
+video_url = "https://www.youtube.com/watch?v=b4vbS4mJfRY"
 
-print(completion.choices[0].message)
-# 将print中返回得到的文本结果输出到文件
-with open("test.txt", 'w', encoding='utf-8') as file:
-    file.write(completion.choices[0].message)
+# 从YouTube下载视频并提取音频
+youtube = YouTube(video_url)
+video_title = youtube.title
+
+# 将视频标题中的特殊字符替换为下划线
+video_title = re.sub(r'[^\w\-_\. ]', '_', video_title)
+
+# 使用视频标题作为文件名
+audio_file = f"{video_title}.mp4"
+video = youtube.streams.filter(only_audio=True).first()
+video.download(filename=audio_file)
+
+# 阶段2：音频转换
+# 将下载的音频转换为wav格式
+clip = mp.AudioFileClip(audio_file)
+wav_file = f"{video_title}.wav"
+clip.write_audiofile(wav_file)

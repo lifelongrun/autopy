@@ -53,10 +53,10 @@ plt.show()
 
 
 # 导出滤波后的图像为PDF
-image_median_blur_pil = Image.fromarray(image_median_blur)
-image_median_blur_pil.save('median_blur_image.pdf', "PDF", resolution=600.0)
+# image_median_blur_pil = Image.fromarray(image_median_blur)
+# image_median_blur_pil.save('median_blur_image.pdf', "PDF", resolution=600.0)
 
 # 将OpenCV图像转换为PIL图像格式
-th2_pil = Image.fromarray(th2)
+# th2_pil = Image.fromarray(th2)
 # 使用PIL保存图像为PDF
-th2_pil.save('otsu_image.pdf', "PDF", resolution=600.0)
+# th2_pil.save('otsu_image.pdf', "PDF", resolution=600.0)
